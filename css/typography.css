@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'SectionBd';
+  src: url('fonts/Section-Bold.eot');
+  src: url('fonts/Section-Bold.woff2') format('woff2'),
+       url('fonts/Section-Bold.woff') format('woff'),
+       url('fonts/Section-Bold.ttf') format('truetype'),
+       url('fonts/Section-Bold.svg#Section-Bold') format('svg'),
+       url('fonts/Section-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.white,
+.white *,
+.white a { color:#fff; }
+.grey1,
+.grey1 *,
+.grey1 a { color:#ddd; }
+.grey2,
+.grey2 *,
+.grey2 a { color:#c1c1c1; }
+.grey3,
+.grey3 *,
+.grey3 a { color:#909090; }
+.grey4,
+.grey4 *,
+.grey4 a { color:#5b5b5c; }
+.grey5,
+.grey5 *,
+.grey5 a { color:#212221; }
+.id-green { color:#005838; }
+.alt-green1 { color:#2d9067; }
+.alt-green2 { color:#8ec549; }
+
+.txt-kern { font-style:italic; }
+
+.txt-bold { font-weight:700; }
+.txt-thin { font-weight:200; }
+
+.caps { text-transform:uppercase; }
+
+.hlight { line-height:90%; }
+
+.h1 { font-size:400%; }
+.h2 { font-size:250%; }
+.h3 { font-size:200%; }
+.h4 { font-size:180%; }
+.h5 { font-size:150%; }
+.h6 { font-size:100%; }
+
+.bd-font,
+.bd-font * { font-family:"SectionBd", sans-serif; }
