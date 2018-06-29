@@ -12,19 +12,19 @@
 		<link rel="stylesheet" href="css/ui.css">
 		<link rel="stylesheet" href="css/static.css">
 		<link rel="stylesheet" href="css/responsive.css">
-		<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+		<script src="js/jquery-2.2.4.min.js" type="text/javascript"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/scripts.js"></script>
 	</head>
 	<body>
 		<?php 
-			include('modulos/header.php');
+			include('_inc/header.php');
 
 				if(!isset($_GET['s'])){
-					include('modulos/financials.php');
+					include('_inc/home.php');
 				}
 
-			include('modulos/footer.php'); 
+			include('_inc/footer.php'); 
 		?>
 	</body>
 </html>
