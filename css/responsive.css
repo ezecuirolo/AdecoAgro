@@ -8,17 +8,34 @@
 
 @media (min-width:992px) {
 	.mobile-only { display:none !important; }
+	.h1 { font-size:320%; }
+	.h2 { font-size:250%; }
+	.h3 { font-size:200%; }
+	.h4 { font-size:180%; }
+	.h5 { font-size:150%; }
+	.h6 { font-size:100%; }
 	header .logo { margin-right:50px; }
 	header .logo { display:inline-block; vertical-align:middle; }
+	header .sub > li > a { padding:10px; }
+	body > #home > #hero .carousel-item { padding:100px 0 70px; }
+	body > #home > #hero .carousel-item.report { padding-bottom:90px; }
 }
 
 @media (max-width:991px) {
 	.desktop-only { display:none !important; }
+	.h1 { font-size:280%; }
+	.h2 { font-size:220%; }
+	.h3 { font-size:180%; }
+	.h4 { font-size:150%; }
+	.h5 { font-size:110%; }
+	.h6 { font-size:90%; }
 	header .menu > li > a { padding:10px; }
+	body > #home #invest-reports #quarter-pack { margin-bottom:50px; }
 }
 
 @media (max-width:991px) and (min-width:768px) {
 	footer .stock { margin-top:30px; }
+	body > #home #infonews .feed > .h3 > i { display:none; }
 }
 
 @media (max-width:991px) and (min-width:576px) {}
@@ -28,11 +45,14 @@
 	.carousel-control-prev { width:7%; }
 	.carousel-control-next-icon,
 	.carousel-control-prev-icon { width:40px; height:auto; }
+	body > #event .content img { max-width:50%; }
 }
 
 @media (max-width:767px) {
 	.carousel-control-next-icon,
 	.carousel-control-prev-icon { width:20px; height:auto; }
+	body > #home #infonews .feed { margin-bottom:30px; padding:30px; }
+	body > #event .content img { max-width:45%; }
 	footer .down .row:nth-of-type(2) > div { text-align:center !important; margin-bottom: 20px; }
 	footer .stock { margin-top:30px; }
 }

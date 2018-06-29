@@ -5,7 +5,7 @@ img.centered { float:none; display:block; margin-left:auto; margin-right:auto; }
 
 
 /* Header */
-header { z-index:2020; transition:0.2s; background-color:#fff; display:block; clear:both; }
+header { z-index:2020; transition:0.2s; background-color:#fff; display:block; clear:both; /* position:fixed; left:0; right:0; */ }
 header .logo img { margin:10px 0; height:38px; }
 .hamburger { z-index:2010; position:absolute; top:30px; right:15px; border-radius:50%; padding:15px; }
 header .navbar { padding:0; }
@@ -23,6 +23,137 @@ header > .sub { display:none; }
 header .submenu { display:none; }
 header .navbar-nav.mobile-only a > i.fas { transition:0.2s all; }
 header .navbar-nav.mobile-only a.active > i.fas { transform:rotate(180deg); }
+header .sub { font-size:15px; margin-bottom:0; }
+header .sub > li { display:inline-block; }
+header .sub > li > a { color:#999; padding:10px 20px; display:block; border-bottom:2px solid transparent; border-top:2px solid transparent; transition:0.2s all; }
+header .sub > li.active > a { border-bottom-color:#666; }
+header .sub > li:hover > a { background-color:#eee }
+
+
+/* Template 1 */
+section.text { padding:40px 0 60px; }
+section.text img { width:600px; max-width:100% !important; height:auto !important; margin:20px auto 40px; }
+section.text img.centered { float:none; display:block; }
+
+
+/* Home */
+body > #home > #hero .report { background:url(../img/bg-home-first-slide.jpg) center bottom no-repeat; background-size:cover; height:450px; }
+body > #home > #hero .report h2 { margin-bottom:30px; }
+body > #home > #hero .report p { font-size:18px; width:300px; max-width:100%; line-height:1.5em; margin-bottom:50px; }
+body > #home > #hero .report p a { font-weight:600; }
+body > #home > #hero .report a.link { padding-left:25px; margin-right:20px; background-image:url(../img/icon-paper_sheet.png); background-size:contain; background-position:left center; background-repeat:no-repeat; }
+body > #home > #hero .report .container { position:relative; }
+body > #home > #hero .report img { position:absolute; bottom:0; right:15px; }
+body > #home > #hero .carousel-item { padding:50px 0; }
+body > #home > #why-invest { padding:80px 0; }
+body > #home > #why-invest h2 { margin-bottom:20px; }
+body > #home > #why-invest .icons { margin:60px 0 90px; }
+body > #home > #why-invest .icons > div { opacity:0.7; transition:0.5s all; }
+body > #home > #why-invest .icons > div:hover { opacity:1; }
+body > #home > #why-invest .nyse { width:335px; max-width:100%; display:block; margin:0 auto; }
+body > #home > #why-invest .nyse > * { display:inline-block; vertical-align:middle; }
+body > #home > #why-invest .nyse > img { width:50px; opacity:0.4; margin-bottom:10px; margin-right:15px; }
+body > #home > #why-invest .nyse > small { width:calc(100% - 65px); }
+body > #home #invest-reports { padding:70px 0; background-image:url(../img/bg-invest-reports.png); background-size:cover; background-repeat:no-repeat; background-position:center bottom; }
+body > #home #invest-reports #investors > a { display:inline-block; vertical-align:top; width:33.33333%; min-height:180px; padding:30px 0; transition:0.2s all; }
+body > #home #invest-reports #investors > a:nth-of-type(1) { background-color:#005838; }
+body > #home #invest-reports #investors > a:nth-of-type(2) { background-color:#2d9067; }
+body > #home #invest-reports #investors > a:nth-of-type(3) { background-color:#8ec549; }
+body > #home #invest-reports #investors > a:hover { text-decoration:underline; color:#fff; /* background-color:#999; */ opacity:0.8; }
+body > #home #invest-reports > div > div > div > h2 { margin-bottom:30px; }
+body > #home #invest-reports .pack > h2 { background-image:url(../img/icon-paper_sheet.png); background-repeat:no-repeat; background-position:left 5px; padding-left:45px; }
+body > #home #invest-reports .pack > ul { list-style:none; padding:0; }
+body > #home #invest-reports .pack > ul > li { padding-left:45px; background-position:top left; background-repeat:no-repeat; background-size:25px; }
+body > #home #invest-reports .pack > ul > li.png { background-image:url(../img/icon-png.png); }
+body > #home #invest-reports .pack > ul > li.doc { background-image:url(../img/icon-doc.png); }
+body > #home #invest-reports .pack > ul > li.xls { background-image:url(../img/icon-xls.png); }
+body > #home #invest-reports .pack > ul > li.html { background-image:url(../img/icon-html.png); }
+body > #home #invest-reports .pack > ul > li.pdf { background-image:url(../img/icon-pdf.png); }
+body > #home #invest-reports .pack > ul > li.mp3 { background-image:url(../img/icon-mp3.png); }
+body > #home #invest-reports .pack > ul > li.ppt { background-image:url(../img/icon-ppt.png); }
+body > #home #invest-reports .pack > ul > li > a { line-height:35px; }
+body > #home #invest-reports .pack > ul > li:hover > a { color:#666; }
+body > #home #infonews { padding:50px 0; }
+body > #home #infonews .news > h3,
+body > #home #infonews .feed > h3 { margin:30px 0 30px; }
+body > #home #infonews .feed > h3 * { color:#1da1f2; }
+body > #home #infonews .feed > a { display:block; margin-bottom:20px; font-size:14px; padding:15px; border:1px solid #eee; }
+body > #home #infonews .feed > a:hover { background-color:#f1f1f1; }
+body > #home #infonews .news > .item { display:block; padding-left:17px; position:relative; margin-bottom:25px; }
+body > #home #infonews .news > .item > span { display:block; }
+body > #home #infonews .news > .item > span:first-of-type { font-weight:700; }
+body > #home #infonews .news > .item > i { position:absolute; top:2px; left:0; }
+body > #home #infonews #calendar { padding:30px; background-color:#005838; background-image:url(../img/bg-cal-widget.png); background-repeat:no-repeat; background-position:280px center; }
+body > #home #infonews a,
+body > #home #infonews a * { transition:0.2s all; }
+body > #home #infonews #calendar > h3 { margin-bottom:25px; }
+body > #home #infonews #calendar .event { position:relative; padding-left:15px; margin-bottom:10px; display:block; }
+body > #home #infonews #calendar > :nth-last-child(2) { margin-bottom:20px; }
+body > #home #infonews #calendar .event i.fas { position:absolute; top:2px; left:0; }
+body > #home #infonews #calendar > a:hover,
+body > #home #infonews #calendar > a:hover * { color:#fff !important; }
+body > #home #infonews #calendar > a:last-of-type > i { margin-right:5px; font-size:24px; }
+
+
+/* Financials */
+body > #financials #earnings { padding-top:60px; }
+body > #financials #earnings .quarters { margin-bottom:25px; }
+body > #financials #earnings h3 { margin-bottom:50px; }
+body > #financials #earnings h5 { padding-bottom:5px; border-bottom-width:2px; border-bottom-style:solid; }
+body > #financials #earnings h5 { margin-bottom:0; }
+body > #financials #earnings .quarter h5 { border-bottom-color:#ccc; }
+body > #financials #earnings .quarter:first-of-type > h5 { border-bottom-color:#333; }
+body > #financials #earnings .pack { padding:20px 15px; border:1px solid #ccc; margin-top:25px; border-bottom-width:5px; }
+body > #financials #earnings .last .pack { background-color:#2d9067; border-bottom-color:#8ec549; }
+body > #financials #earnings .pack > ul { list-style:none; padding:0; }
+body > #financials #earnings .pack > ul > li { padding-left:35px; background-position:top left; background-repeat:no-repeat; background-size:25px; line-height:25px; font-size:14px; background-size:20px; }
+body > #financials #earnings .pack > ul > li:hover > a { color:#666; }
+body > #financials #earnings .last .pack > ul > li:hover > a { color:#ccc; }
+body > #financials #earnings .years { margin-bottom:20px; }
+body > #financials #sec-filings { padding:50px 0; }
+body > #financials #sec-filings select,
+body > #financials #sec-filings select * { font-size:15px; }
+body > #financials #sec-filings img { height:23px; }
+
+.pack > ul > li.png { background-image:url(../img/icon-png.png); }
+.pack > ul > li.doc { background-image:url(../img/icon-doc.png); }
+.pack > ul > li.xls { background-image:url(../img/icon-xls.png); }
+.pack > ul > li.html { background-image:url(../img/icon-html.png); }
+.pack > ul > li.pdf { background-image:url(../img/icon-pdf.png); }
+.pack > ul > li.mp3 { background-image:url(../img/icon-mp3.png); }
+.pack > ul > li.ppt { background-image:url(../img/icon-ppt.png); }
+.pack > ul > li  { line-height:35px; }
+
+
+/* Events */
+body > #events #calendar { padding:50px 0; }
+body > #events .jzdbox1 { width:340px; border-radius:5px; overflow:hidden; display:block; margin-bottom:10px; margin:0 auto; margin-top:30px; transition:0.2s all; }
+body > #events .jzdbox1:hover { background-color:#f8f8f8; }
+body > #events .jzdcal { padding:0 10px 10px 10px; box-sizing:border-box !important; border:2px solid #2d9067; }
+body > #events .jzdcalt { font-weight:700; display:block; margin:18px 0 0 0; text-transform:uppercase; text-align:center; letter-spacing:1px; }
+body > #events .jzdcal > span.day{ color:#ddd; }
+body > #events .jzdcal span,
+body > #events .jzdcal span a { font-weight:400; color:#bbb; text-align:center; display:inline-block; float:left; overflow:hidden; line-height:42px; }
+body > #events .jzdcal span { width:45px; height:45px; }
+body > #events .jzdcal span a { width:40px; }
+.circle { border:2px solid #8ec549; box-sizing:border-box !important; border-radius:50% !important; }
+body > #events span[data-title]:hover:after, 
+body > #events div[data-title]:hover:after { content:attr(data-title); position:absolute; margin:0 0 100px; background:#005838; border:1px solid #999; color:#fff; padding:5px; z-index:9999; min-width:150px; max-width:150px; }
+body > #events #upcoming {}
+body > #events #upcoming h3 { margin-bottom: 30px; }
+body > #events #upcoming .event { border:2px solid #ccc; padding:15px 150px 15px 20px; display:block; margin-bottom:15px; position:relative; transition:0.2s all; }
+body > #events #upcoming .event > span { position:absolute; top:15px; right:20px; }
+body > #events #upcoming .event:hover { background:#eee; color:#666; }
+body > #events #upcoming .event:hover > span { color:#888; }
+body > #events #upcoming .event > p:last-of-type { margin-bottom:0; }
+/* Event */
+body > #event .content { padding:50px 0; }
+body > #event .content p:first-of-type { margin-top:40px; }
+body > #event .content p:last-of-type { margin-bottom:45px; }
+body > #event .content img { float:right; margin-left:25px; margin-bottom:20px; }
+body > #event .content a.download { background-color:#005838; padding:15px 20px; transition:0.2s all; }
+body > #event .content a.download:hover { background-color:#2d9067; color:#fff; }
+body > #event .content a.download > i { margin-right:10px; font-size:20px; }
 
 
 /* Footer */

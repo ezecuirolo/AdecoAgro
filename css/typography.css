@@ -28,25 +28,27 @@
 .grey5,
 .grey5 *,
 .grey5 a { color:#212221; }
-.id-green { color:#005838; }
-.alt-green1 { color:#2d9067; }
-.alt-green2 { color:#8ec549; }
+.id-green,
+.id-green * { color:#005838; }
+.alt-green1,
+.alt-green1 * { color:#2d9067; }
+.alt-green2,
+.alt-green2 * { color:#8ec549; }
 
 .txt-kern { font-style:italic; }
 
-.txt-bold { font-weight:700; }
+.txt-bold,
+.txt-bold * { font-weight:700; }
 .txt-thin { font-weight:200; }
 
 .caps { text-transform:uppercase; }
 
 .hlight { line-height:90%; }
 
-.h1 { font-size:400%; }
-.h2 { font-size:250%; }
-.h3 { font-size:200%; }
-.h4 { font-size:180%; }
-.h5 { font-size:150%; }
-.h6 { font-size:100%; }
+section.text .h1 { margin-bottom:1em; }
+section.text .txt-bold { margin-bottom:1.5em; }
+section.text p { margin-bottom:1.5em; }
+section.text span.top { display:block; margin-bottom:0.5em; }
 
 .bd-font,
-.bd-font * { font-family:"SectionBd", sans-serif; }
+.bd-font * { font-family:"SectionBd", sans-serif; line-height:95%; }
