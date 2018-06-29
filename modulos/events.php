@@ -1,12 +1,4 @@
-<html lang="en">
-
-<?php include('head.php'); ?>
-
-<body>
-	<?php include('header.php'); ?>
-	
-	<div id="events">
-	
+<div id="events">	
 	<section id="calendar">
 		<div class="container">
 			<h3 class="h3 bd-font grey4">Events</h3>
@@ -197,10 +189,4 @@
 			</a>
 		</div>
 	</section>
-	
-	</div>
-
-	<?php include('footer.php'); ?>
-</body>
-
-</html>
+</div>

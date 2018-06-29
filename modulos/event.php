@@ -1,12 +1,4 @@
-<html lang="en">
-
-<?php include('head.php'); ?>
-
-<body>
-	<?php include('header.php'); ?>
-	
-	<div id="event">
-		
+<div id="event">		
 	<section class="content">
 		<div class="container">
 			<h4>July 15th, 2018</h4>
@@ -19,10 +11,4 @@
 			<div class="clearfix">&nbsp;</div>
 		</div>
 	</section>
-		
-	</div>
-
-	<?php include('footer.php'); ?>
-</body>
-
-</html>
+</div>

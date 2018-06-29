@@ -1,12 +1,5 @@
-<html lang="en">
-
-<?php include('head.php'); ?>
-
-<body>
-	<?php include('header.php'); ?>
+<div id="home">
 	
-	<div id="home">
-		
 	<section id="hero">
 		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner">
@@ -147,10 +140,5 @@
 			</div>
 		</div>
 	</section>
-		
-	</div>
-
-	<?php include('footer.php'); ?>
-</body>
-
-</html>
+	
+</div>

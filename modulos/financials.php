@@ -1,12 +1,4 @@
-<html lang="en">
-
-<?php include('head.php'); ?>
-
-<body>
-	<?php include('header.php'); ?>
-	
-	<div id="financials">
-		
+<div id="financials">
 	<section id="earnings">
 		<div class="container">
 			<h3 class="h3 bd-font grey4">Quarterly Earnings</h3>
@@ -163,11 +155,5 @@
 				</tbody>
 			</table>
 		</div>
-	</section>
-	
-	</div>
-
-	<?php include('footer.php'); ?>
-</body>
-
-</html>
+	</section>	
+</div>
