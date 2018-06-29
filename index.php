@@ -21,7 +21,7 @@
 			include('modulos/header.php');
 
 				if(!isset($_GET['s'])){
-					include('modulos/home.php');
+					include('modulos/financials.php');
 				}
 
 			include('modulos/footer.php'); 
