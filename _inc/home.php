@@ -1,5 +1,7 @@
+<?php
+	include('setup/config.php');
+?>
 <div id="home">
-	
 	<section id="hero">
 		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner">
@@ -86,35 +88,36 @@
 			<div class="row">
 				<div class="col-md-3 col-lg-3 news">
 					<h3 class="h3 bd-font">Newsroom</h3>
-					<a href="javascript:;" class="item grey4">
-						<i class="fas fa-caret-right alt-green2"></i>
-						<span>2018 03 02</span>
-						<span>Mariano Bosch (CEO) live on Bloomberg TV.</span>
-						<span class="txt-bold">Watch video</span>
-					</a>
-					<a href="javascript:;" class="item grey4">
-						<i class="fas fa-caret-right alt-green2"></i>
-						<span>2018 03 02</span>
-						<span>Mariano Bosch (CEO) live on Bloomberg TV.</span>
-						<span class="txt-bold">Watch video</span>
-					</a>
-					<a href="javascript:;" class="item grey4">
-						<i class="fas fa-caret-right alt-green2"></i>
-						<span>2018 03 02</span>
-						<span>Mariano Bosch (CEO) live on Bloomberg TV.</span>
-						<span class="txt-bold">Watch video</span>
-					</a>
+					<?php
+						$consulta = <<<SQL
+							SELECT
+								ID,
+								FECHA,
+								TITULO,
+								LINK
+							FROM
+								newsroom
+							ORDER BY FECHA
+							LIMIT 3
+SQL;
+
+						$news = mysqli_query($conexion, $consulta);
+
+						while($a_news = mysqli_fetch_assoc($news)){
+					?>
+						<a href="index.php?s=news&id=<?php echo $a_news['ID'] ?>" class="item grey4">
+							<i class="fas fa-caret-right alt-green2"></i>
+							<span><?php echo $a_news['FECHA'] ?></span>
+							<span><?php echo $a_news['TITULO'] ?></span>
+							<!-- <span class="txt-bold">Watch video</span> -->
+						</a>
+					<?php		
+						}
+					?>
 				</div>
 				<div class="col-md-4 feed">
-					<h3 class="h3"><i class="fab fa-twitter"></i> <span class="bd-font">@AdecoagroIR</span></h3>
-					<a href="javascript:;">
-						<span class="grey2">15 May</span><br>
-						<span>In May 2018, we signed sale agreements for Rio de Janeiro and Conquista farms, located in western Bahia and Tocantins, respectively. The farms total 9,300 of croppable hectares and the selling price for both farms was $53.0 million. $AGRO #Adecoagro</span>
-					</a>
-					<a href="javascript:;">
-						<span class="grey2">15 May</span><br>
-						<span>In May 2018, we signed sale agreements for Rio de Janeiro and Conquista farms, located in western Bahia and Tocantins, respectively. The farms total 9,300 of croppable hectares and the selling price for both farms was $53.0 million. $AGRO #Adecoagro</span>
-					</a>
+					<h3 class="h3"><i class="fab fa-tter"></i> <span class="bd-font">@AdecoagroIR</span></h3>
+					<a class="twitter-timeline" href="https://twitter.com/AdecoagroIR?ref_src=twsrc%5Etfw">Tweets by AdecoagroIR</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 				<div class="col-md-5 col-lg-5">
 					<div id="calendar" class="widget">

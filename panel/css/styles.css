@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Nunito Sans', sans-serif;
+	text-decoration: none;
+	list-style: none;
+}
+
+p.error_login {
+    margin-top: 10px;
+    color: #cf0000;
+    font-weight: 600;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+body.login {
+	background: #2d9067;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+body.login div {
+	width: 500px;
+	height: 300px;
+	background: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+body.login div form {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+}
+
+body.login div form img {
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+body.login div form input {
+	width: 80%;
+	padding: 10px;
+	display: block;
+	margin-bottom: 20px;
+	outline: none;
+	font-size: 1rem;
+}
+
+body.login div form input[type="submit"] {
+	margin-bottom: 0;
+	background: #2d9067;
+	border: 1px solid #2d9067;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+/* PANEL */
+
+body.panel header {
+	padding: 20px 0;
+}
+
+body.panel header .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body.panel header .container img {
+	width: 200px;
+}
+
+body.panel header .container nav ul li {
+	display: inline-block;
+	margin: 0 10px;
+}
