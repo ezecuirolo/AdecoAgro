@@ -1,24 +1,59 @@
+<?php
+	include('setup/config.php');
+?>
 <div id="financials">
 	<section id="earnings">
 		<div class="container">
 			<h3 class="h3 bd-font grey4">Quarterly Earnings</h3>
 			<div class="row quarters">
 				<div class="col-3 quarter last">
-					<h5 class="h5">2018</h5>
+					<h5 class="h5"><?php echo date("Y")?></h5>
 					<div class="pack">
-						<p class="white">Q1</p>
+						<?php
+							$consulta_quarter = "SELECT QUARTER FROM financials_quarters WHERE ANIO = YEAR(NOW()) ORDER BY QUARTER DESC LIMIT 1";
+
+							$quarter = mysqli_query($conexion, $consulta_quarter);
+							$quarter_final = mysqli_fetch_assoc($quarter);
+						?>
+						<p class="white"><?php echo $quarter_final['QUARTER'] ?></p>
 						<ul>
-							<li class="white pdf"><a href="javascript:;">Q1 ‘18 Earning Release</a></li>
-							<li class="white pdf"><a href="javascript:;">Q1 ’18 Financial Statement</a></li>
-							<li class="white pdf"><a href="javascript:;">Q1 ‘18 Results Presentation</a></li>
-							<li class="white mp3"><a href="javascript:;">Q1 ’18 Results Teleconference</a></li>
-							<li class="white pdf"><a href="javascript:;">Q1 ‘18 Teleconference Transcript</a></li>
-							<li class="white xls"><a href="javascript:;">Q1 ’18 Business Division segmented Spreadsheets</a></li>
+							<?php
+								$quarter_actual = $quarter_final['QUARTER'];
+
+								$consulta_last_q = <<<SQL
+									SELECT
+										*
+									FROM
+										financials_quarters
+									WHERE
+										ANIO = YEAR(NOW()) AND QUARTER = '$quarter_actual'
+									LIMIT 6
+SQL;
+
+								$filas_q = mysqli_query($conexion, $consulta_last_q);
+
+								while($array_q = mysqli_fetch_assoc($filas_q)){
+							?>
+								<li class="white 
+									<?php 
+										if($array_q['FORMATO'] == 'pdf'){ 
+											echo 'pdf';
+										} else if($array_q['FORMATO'] == 'mp3'){
+											echo 'mp3';
+										} else if($array_q['FORMATO'] == 'xls'){
+											echo 'xls';
+										}
+									?>">
+									<a href="uploads/<?php echo $array_q['ARCHIVO'] ?>"><?php echo $array_q['TITULO'] ?></a>
+								</li>
+							<?php
+								}
+							?>
 						</ul>
 					</div>
 				</div>
 				<div class="col-9">
-					<h5 class="h5">2017</h5>
+					<h5 class="h5"><?php echo (date("Y") - 1)?></h5>
 					<div class="row">
 						<div class="col-4 quarter">
 							<div class="pack">

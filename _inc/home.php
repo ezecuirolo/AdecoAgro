@@ -61,12 +61,43 @@
 				<div class="col-lg-6 pack">
 					<h2>Quarter<br>release pack</h2>
 					<ul>
-						<li class="grey3 pdf"><a href="javascript:;">Q1 ‘18 Earning Release</a></li>
-						<li class="grey3 pdf"><a href="javascript:;">Q1 ’18 Financial Statement</a></li>
-						<li class="grey3 pdf"><a href="javascript:;">Q1 ‘18 Results Presentation</a></li>
-						<li class="grey3 mp3"><a href="javascript:;">Q1 ’18 Results Teleconference</a></li>
-						<li class="grey3 pdf"><a href="javascript:;">Q1 ‘18 Teleconference Transcript</a></li>
-						<li class="grey3 xls"><a href="javascript:;">Q1 ’18 Business Division segmented Spreadsheets</a></li>
+						<?php
+								$consulta_quarter = "SELECT QUARTER FROM financials_quarters WHERE ANIO = YEAR(NOW()) ORDER BY QUARTER DESC LIMIT 1";
+
+								$quarter = mysqli_query($conexion, $consulta_quarter);
+								$quarter_final = mysqli_fetch_assoc($quarter);
+
+								$quarter_actual = $quarter_final['QUARTER'];
+
+								$consulta_last_q = <<<SQL
+									SELECT
+										*
+									FROM
+										financials_quarters
+									WHERE
+										ANIO = YEAR(NOW()) AND QUARTER = '$quarter_actual'
+									LIMIT 6
+SQL;
+
+								$filas_q = mysqli_query($conexion, $consulta_last_q);
+
+								while($array_q = mysqli_fetch_assoc($filas_q)){
+							?>
+								<li class="grey3 
+									<?php 
+										if($array_q['FORMATO'] == 'pdf'){ 
+											echo 'pdf';
+										} else if($array_q['FORMATO'] == 'mp3'){
+											echo 'mp3';
+										} else if($array_q['FORMATO'] == 'xls'){
+											echo 'xls';
+										}
+									?>">
+									<a href="uploads/<?php echo $array_q['ARCHIVO'] ?>"><?php echo $array_q['TITULO'] ?></a>
+								</li>
+							<?php
+								}
+							?>
 					</ul>
 				</div>
 				<div id="investors" class="col-lg-6 text-center">

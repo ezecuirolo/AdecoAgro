@@ -21,6 +21,8 @@
 					include('_inc/home.php');
 				} else if($_GET['s'] == 'news'){
 					include('_inc/text.php');
+				} else if($_GET['s'] == 'financials'){
+					include('_inc/financials.php');
 				}
 
 			include('_inc/footer.php'); 
