@@ -39,7 +39,7 @@ SQL;
 						<td><?php echo substr($a['TEXTO'], 0, 100) ?></td>
 						<td><?php echo $a['FECHA'] ?></td>
 						<td><a href="<?php echo $a['LINK'] ?>" target="_blank"><?php echo $a['LINK'] ?></a></td>
-						<td><a href="#"><i class="fas fa-pencil-alt"></i></a></td>
+						<td><a href="panel.php?s=news&action=edit&id=<?php echo $a['ID'] ?>"><i class="fas fa-pencil-alt"></i></a></td>
 						<td><a href="actions/delete_news.php?id=<?php echo $a['ID'] ?>"><i class="fas fa-trash-alt"></i></a></td>
 					</tr>
 			<?php

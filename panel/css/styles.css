@@ -150,10 +150,12 @@ body.panel section .content table tr td:last-child a {
 
 body.panel section .content form {
 	margin-bottom: 30px;
+	display: inline-block;
+	width: 50%;
 }
 
 body.panel section .content form div {
-	width: 50%;
+	width: 100%;
 	margin-bottom: 20px;
 }
 
@@ -164,7 +166,8 @@ body.panel section .content form div textarea {
 	width: 100%;
 }
 
-body.panel section .content form div label {
+body.panel section .content form div label,
+body.panel section .content form + div p {
 	font-weight: 700;
 	color: #005837;
 	font-size: 1rem;
@@ -189,4 +192,13 @@ body.panel section .content form input[type="submit"] {
 	outline: none;
 	letter-spacing: 1px;
 	font-size: 1rem;
+}
+
+body.panel section .content form + div {
+	float: right;
+}
+
+body.panel section .content form + div p {
+	margin-bottom: 10px;
+	text-align: right;
 }

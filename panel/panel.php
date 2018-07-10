@@ -32,6 +32,8 @@
 						include('modulos/news.php');
 					} else if($_GET['action'] == 'new'){
 						include('modulos/new_news.php');
+					} else if($_GET['action'] == 'edit'){
+						include('modulos/edit_news.php');
 					} else {
 						include('modulos/news.php');	
 					}
