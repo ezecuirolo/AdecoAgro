@@ -70,21 +70,123 @@ body.login div form input[type="submit"] {
 
 /* PANEL */
 
-body.panel header {
+body.panel > header {
 	padding: 20px 0;
+	border-bottom: 3px solid #005837;
 }
 
-body.panel header .container {
+body.panel > header .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-body.panel header .container img {
+body.panel > header .container img {
 	width: 200px;
 }
 
-body.panel header .container nav ul li {
+body.panel > header .container nav ul li {
 	display: inline-block;
 	margin: 0 10px;
+}
+
+body.panel > header .container nav ul li a {
+	color: #005837;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+body.panel section header {
+	padding: 40px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+body.panel section header h2 {
+	color: #005837;
+	font-weight: 700;
+	font-size: 1.7rem;
+}
+
+body.panel section header a {
+	background: #005837;
+	display: inline-block;
+	padding: 5px 10px;
+	color: #fff;
+}
+
+body.panel section .content table tr th,
+body.panel section .content table tr td {
+	padding: 10px;
+}
+
+body.panel section .content table tr th {
+	text-transform: uppercase;
+	font-size: 1rem;
+	background: #005837;
+	color: #fff;
+}
+
+body.panel section .content table tr td {
+	font-size: 0.9rem;
+}
+
+body.panel section .content table tr td:nth-last-child(2),
+body.panel section .content table tr td:last-child {
+	text-align: center;
+}
+
+body.panel section .content table tr td:nth-last-child(2) a {
+	color: #138ead;
+	font-size: 1.2rem;
+}
+
+body.panel section .content table tr td:last-child a {
+	color: #ad1331;
+	font-size: 1.2rem;
+}
+
+body.panel section .content form {
+	margin-bottom: 30px;
+}
+
+body.panel section .content form div {
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+body.panel section .content form div label,
+body.panel section .content form div input,
+body.panel section .content form div textarea {
+	display: block;
+	width: 100%;
+}
+
+body.panel section .content form div label {
+	font-weight: 700;
+	color: #005837;
+	font-size: 1rem;
+}
+
+body.panel section .content form div input,
+body.panel section .content form div textarea  {
+	margin-top: 8px;
+	padding: 3px 10px;
+	resize: none;
+	font-size: 1rem;
+	outline: none;
+}
+
+body.panel section .content form input[type="submit"] {
+	background: #005837;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	outline: none;
+	letter-spacing: 1px;
+	font-size: 1rem;
 }

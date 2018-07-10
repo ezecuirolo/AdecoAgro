@@ -14,12 +14,30 @@
 
 			<nav>
 				<ul>
-					<li><a href="#">Noticias</a></li>
-					<li><a href="#">Finanzas</a></li>
+					<li><a href="panel.php?s=news">Noticias</a></li>
+					<li><a href="panel.php?s=financials">Finanzas</a></li>
 					<li><a href="actions/logout.php">Cerrar sesión</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+
+	<main>
+		<div class="container">
+			<?php
+				if(!isset($_GET['s'])){
+					include('modulos/news.php');
+				} else if($_GET['s'] == 'news'){
+					if(!isset($_GET['action'])){
+						include('modulos/news.php');
+					} else if($_GET['action'] == 'new'){
+						include('modulos/new_news.php');
+					} else {
+						include('modulos/news.php');	
+					}
+				}
+			?>
+		</div>
+	</main>
 </body>
 </html>

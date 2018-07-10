@@ -17,7 +17,6 @@
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link" id="sub2">Our Assets</a>
-							
 						</li>
 						<li class="nav-item">
 							<a href="#" class="nav-link" id="sub3">Financials</a>
@@ -44,6 +43,7 @@
 			<li class="active"><a href="#">Strategy</a></li><li><a href="#">Organizational Structure</a></li><li><a href="#">Board of Directors</a></li><li><a href="#">Executive Officers</a></li><li><a href="#">Dividend policy</a></li><li><a href="#">Bylaws</a></li><li><a href="#">Code of Ethics</a></li><li><a href="#">Insider Trading Policy</a></li><li><a href="#">Annual General Meeting</a></li>
 		</ul>
 		<ul id="submenu3" class="sub bg-light text-center desktop-only">
-			<li class="active"><a href="index.php?s=financials">Quarterly Earnings</a></li><li><a href="#">SEC Filings</a></li>
+			<li class="active"><a href="index.php?s=financials#earnings">Quarterly Earnings</a></li>
+			<li><a href="index.php?s=financials#sec-filings">SEC Filings</a></li>
 		</ul>
 	</header>

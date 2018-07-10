@@ -93,7 +93,7 @@ SQL;
 											echo 'xls';
 										}
 									?>">
-									<a href="uploads/<?php echo $array_q['ARCHIVO'] ?>"><?php echo $array_q['TITULO'] ?></a>
+									<a href="uploads/<?php echo $array_q['ARCHIVO'] ?>" target="_blank"><?php echo $array_q['TITULO'] ?></a>
 								</li>
 							<?php
 								}
@@ -174,5 +174,4 @@ SQL;
 			</div>
 		</div>
 	</section>
-	
 </div>
