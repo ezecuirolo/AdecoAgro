@@ -51,8 +51,6 @@ SQL;
 							?>
 						</ul>
 					</div>
-				</div>
-				<div class="row">
 					<div class="col-3 quarter">
 						<h5 class="h5"><?php echo (date("Y") - 1)?></h5>
 						<div class="pack">
