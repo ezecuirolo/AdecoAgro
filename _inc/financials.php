@@ -51,47 +51,47 @@ SQL;
 							?>
 						</ul>
 					</div>
-					<div class="col-3 quarter">
-						<h5 class="h5"><?php echo (date("Y") - 1)?></h5>
-						<div class="pack">
-							<p class="grey3">Q4</p>
-							<ul>
-								<li class="grey3 pdf"><a href="javascript:;">Q3 ‘17 Earning Release</a></li>
-								<li class="grey3 pdf"><a href="javascript:;">Q3 ’17 Financial Statement</a></li>
-								<li class="grey3 pdf"><a href="javascript:;">Q3 ‘17 Results Presentation</a></li>
-								<li class="grey3 mp3"><a href="javascript:;">Q3 ’17 Results Teleconference</a></li>
-								<li class="grey3 pdf"><a href="javascript:;">Q3 ‘17 Teleconference Transcript</a></li>
-								<li class="grey3 xls"><a href="javascript:;">Q3 ’17 Business Division segmented Spreadsheets</a></li>
-							</ul>
-						</div>
+				</div>
+				<div class="col-3 quarter">
+					<h5 class="h5"><?php echo (date("Y") - 1)?></h5>
+					<div class="pack">
+						<p class="grey3">Q4</p>
+						<ul>
+							<li class="grey3 pdf"><a href="javascript:;">Q3 ‘17 Earning Release</a></li>
+							<li class="grey3 pdf"><a href="javascript:;">Q3 ’17 Financial Statement</a></li>
+							<li class="grey3 pdf"><a href="javascript:;">Q3 ‘17 Results Presentation</a></li>
+							<li class="grey3 mp3"><a href="javascript:;">Q3 ’17 Results Teleconference</a></li>
+							<li class="grey3 pdf"><a href="javascript:;">Q3 ‘17 Teleconference Transcript</a></li>
+							<li class="grey3 xls"><a href="javascript:;">Q3 ’17 Business Division segmented Spreadsheets</a></li>
+						</ul>
 					</div>
-					<div class="col-3 quarter">
-						<h5 class="h5">&nbsp;</h5>
-						<div class="pack">
-							<p class="grey3">Q3</p>
-							<ul>
-								<li class="grey3 pdf"><a href="javascript:;">Q2 ‘17 Earning Release</a></li>
-								<li class="grey3 pdf"><a href="javascript:;">Q2 ’17 Financial Statement</a></li>
-								<li class="grey3 pdf"><a href="javascript:;">Q2 ‘17 Results Presentation</a></li>
-								<li class="grey3 mp3"><a href="javascript:;">Q2 ’17 Results Teleconference</a></li>
-								<li class="grey3 pdf"><a href="javascript:;">Q2 ‘17 Teleconference Transcript</a></li>
-								<li class="grey3 xls"><a href="javascript:;">Q2 ’17 Business Division segmented Spreadsheets</a></li>
-							</ul>
-						</div>
+				</div>
+				<div class="col-3 quarter">
+					<h5 class="h5">&nbsp;</h5>
+					<div class="pack">
+						<p class="grey3">Q3</p>
+						<ul>
+							<li class="grey3 pdf"><a href="javascript:;">Q2 ‘17 Earning Release</a></li>
+							<li class="grey3 pdf"><a href="javascript:;">Q2 ’17 Financial Statement</a></li>
+							<li class="grey3 pdf"><a href="javascript:;">Q2 ‘17 Results Presentation</a></li>
+							<li class="grey3 mp3"><a href="javascript:;">Q2 ’17 Results Teleconference</a></li>
+							<li class="grey3 pdf"><a href="javascript:;">Q2 ‘17 Teleconference Transcript</a></li>
+							<li class="grey3 xls"><a href="javascript:;">Q2 ’17 Business Division segmented Spreadsheets</a></li>
+						</ul>
 					</div>
-					<div class="col-3 quarter">
-						<h5 class="h5">&nbsp;</h5>
-						<div class="pack">
-							<p class="grey3">Q2</p>
-							<ul>
-								<li class="grey3 pdf"><a href="javascript:;">Q1 ‘17 Earning Release</a></li>
-								<li class="grey3 pdf"><a href="javascript:;">Q1 ’17 Financial Statement</a></li>
-								<li class="grey3 pdf"><a href="javascript:;">Q1 ‘17 Results Presentation</a></li>
-								<li class="grey3 mp3"><a href="javascript:;">Q1 ’17 Results Teleconference</a></li>
-								<li class="grey3 pdf"><a href="javascript:;">Q1 ‘17 Teleconference Transcript</a></li>
-								<li class="grey3 xls"><a href="javascript:;">Q1 ’17 Business Division segmented Spreadsheets</a></li>
-							</ul>
-						</div>
+				</div>
+				<div class="col-3 quarter">
+					<h5 class="h5">&nbsp;</h5>
+					<div class="pack">
+						<p class="grey3">Q2</p>
+						<ul>
+							<li class="grey3 pdf"><a href="javascript:;">Q1 ‘17 Earning Release</a></li>
+							<li class="grey3 pdf"><a href="javascript:;">Q1 ’17 Financial Statement</a></li>
+							<li class="grey3 pdf"><a href="javascript:;">Q1 ‘17 Results Presentation</a></li>
+							<li class="grey3 mp3"><a href="javascript:;">Q1 ’17 Results Teleconference</a></li>
+							<li class="grey3 pdf"><a href="javascript:;">Q1 ‘17 Teleconference Transcript</a></li>
+							<li class="grey3 xls"><a href="javascript:;">Q1 ’17 Business Division segmented Spreadsheets</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
