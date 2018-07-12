@@ -105,7 +105,7 @@ SQL;
 					<a href="javascript:;" class="white">
 						<img src="img/icon-home-calc.png"><br>Unit<br>Converter
 					</a><a href="javascript:;" class="white">
-						<img src="img/icon-home-folder.png"><br>Investor<br>Education
+						<img src="img/icon-home-glasses.png"><br>Investor<br>Education
 					</a><a href="javascript:;" class="white">
 						<img src="img/icon-home-contact.png"><br>Contact IR
 					</a>
@@ -117,7 +117,7 @@ SQL;
 	<section id="infonews" class="home">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3 col-lg-3 news">
+				<div class="col-md-4 news">
 					<h3 class="h3 bd-font">Newsroom</h3>
 					<?php
 						$consulta = <<<SQL
@@ -147,23 +147,23 @@ SQL;
 					?>
 				</div>
 				<div class="col-md-4 feed">
-					<h3 class="h3"><i class="fab fa-tter"></i> <span class="bd-font">@AdecoagroIR</span></h3>
+					<h3 class="h3"><i class="fab fa-twitter"></i><!-- <span class="bd-font">@AdecoagroIR</span>--></h3>
 					<a class="twitter-timeline" href="https://twitter.com/AdecoagroIR?ref_src=twsrc%5Etfw">Tweets by AdecoagroIR</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
-				<div class="col-md-5 col-lg-5">
+				<div class="col-md-4">
 					<div id="calendar" class="widget">
-						<h3 class="h3 bd-font grey3">Investor<br>Calendar</h3>
-						<a href="javascript:;" class="event grey2">
+						<h3 class="h3 bd-font white">Investor<br>Calendar</h3>
+						<a href="javascript:;" class="event white">
 							<i class="fas fa-caret-right"></i>
 							<span class="caps">Aug 8</span><br>
 							<span class="">Earnings release event</span>
 						</a>
-						<a href="javascript:;" class="event grey2">
+						<a href="javascript:;" class="event white">
 							<i class="fas fa-caret-right"></i>
 							<span class="caps">Aug 8</span><br>
 							<span class="">Earnings release event</span>
 						</a>
-						<a href="javascript:;" class="event grey2">
+						<a href="javascript:;" class="event white">
 							<i class="fas fa-caret-right"></i>
 							<span class="caps">Aug 8</span><br>
 							<span class="">Earnings release event</span>
