@@ -102,7 +102,7 @@ SQL;
 				</div>
 				<div id="investors" class="col-lg-6 text-center">
 					<h2 class="text-left">Investor<br>Tools &amp; Resources</h2>
-					<a href="javascript:;" class="white">
+					<a id="unit_converter" href="#" class="white">
 						<img src="img/icon-home-calc.png"><br>Unit<br>Converter
 					</a><a href="javascript:;" class="white">
 						<img src="img/icon-home-glasses.png"><br>Investor<br>Education
@@ -175,3 +175,24 @@ SQL;
 		</div>
 	</section>
 </div>
+
+<div class="modal_converter">
+	<div class="adecoagro-converter">
+		<img src="img/converter-logo.png" />
+		<p class="sub-title">Converter Tool</p>
+		<div class="display">
+			<div class="total">Total <span class="unit">u.</span></div>
+			<div class="unit-from">Unit from: <span class="unit">u.</span></div>
+			<div class="unit-to">Unit to: <span class="unit">u.</span></div>
+		</div>
+		<div class="keys">
+			<div class="numbers">
+				<a href="javascript:;" class="key k7"><span>7</span></a><a href="javascript:;" class="key k8"><span>8</span></a><a href="javascript:;" class="key k9"><span>9</span></a><a href="javascript:;" class="key k4"><span>4</span></a><a href="javascript:;" class="key k5"><span>5</span></a><a href="javascript:;" class="key k6"><span>6</span></a><a href="javascript:;" class="key k1"><span>1</span></a><a href="javascript:;" class="key k2"><span>2</span></a><a href="javascript:;" class="key k3"><span>3</span></a><a href="javascript:;" class="key kdot"><span>.</span></a><a href="javascript:;" class="key k0"><span>0</span></a>
+			</div><div class="eq">
+				<a href="javascript:;" class="key keq"><span>=</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script></script>

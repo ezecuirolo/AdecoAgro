@@ -82,4 +82,16 @@ $(document).ready(function () {
 			}
 		});
 
+	$('#unit_converter').click(function(ev){
+		ev.preventDefault();
+
+		$('.modal_converter').fadeIn();
+		$('.modal_converter').css('display', 'flex');
+
+		$(document).keyup(function(ev){
+			if(ev.which == 27){
+				$('.modal_converter').fadeOut();
+			}
+		});	
+	});
 });
