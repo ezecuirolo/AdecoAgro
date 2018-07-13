@@ -148,6 +148,18 @@ SQL;
 				</div>
 				<div class="col-md-4 feed">
 					<h3 class="h3"><i class="fab fa-twitter"></i><!-- <span class="bd-font">@AdecoagroIR</span>--></h3>
+					<a href="https://twitter.com/adecoagroir" class="twitter-follow-button" data-show-count="false" data-lang="es" data-size="large">Seguir a @adecoagroir</a>
+					<script>
+						!function(d,s,id){
+							var js,fjs=d.getElementsByTagName(s)[0];
+							if(!d.getElementById(id)){
+								js=d.createElement(s);
+								js.id=id;js.src="//platform.twitter.com/widgets.js";
+								fjs.parentNode.insertBefore(js,fjs);
+							}
+						}(document,"script","twitter-wjs");</script>
+
+
 					<a class="twitter-timeline" href="https://twitter.com/AdecoagroIR?ref_src=twsrc%5Etfw">Tweets by AdecoagroIR</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 				<div class="col-md-4">
