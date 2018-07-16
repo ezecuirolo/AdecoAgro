@@ -27,6 +27,8 @@
 					include('_inc/text.php');
 				} else if($_GET['s'] == 'financials'){
 					include('_inc/financials.php');
+				} else if($_GET['s'] == 'strategy'){
+					include('_inc/page01.php');
 				}
 
 			include('_inc/footer.php'); 

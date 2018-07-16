@@ -4,7 +4,7 @@
 
 <div id="" class="page">
 	
-	<section id="hero" style="background-image:url('img/page-hero-sample.jpg')">
+	<section id="hero" class="page_header" style="background-image:url('img/page-hero-sample.jpg')">
 		<div class="container">
 			<!-- <small><a href="javascript:;" class="breadcrumbs">Section</a> > Page</small> -->
 			<h3 class="bd-font h2 white">Section Name</h3>
