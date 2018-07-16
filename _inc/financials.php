@@ -6,54 +6,86 @@
 		<div class="container">
 			<h3 class="h3 bd-font grey4">Quarterly Earnings</h3>
 			<div class="row quarters">
-				<div class="col-3 quarter last">
-					<h5 class="h5"><?php echo date("Y")?></h5>
-					<div class="pack">
-						<?php
-							$consulta_quarter = "SELECT QUARTER FROM financials_quarters WHERE ANIO = YEAR(NOW()) ORDER BY QUARTER DESC LIMIT 1";
-
-							$quarter = mysqli_query($conexion, $consulta_quarter);
-							$quarter_final = mysqli_fetch_assoc($quarter);
-						?>
-						<p class="white"><?php echo $quarter_final['QUARTER'] ?></p>
-						<ul>
-							<?php
-								$quarter_actual = $quarter_final['QUARTER'];
-
-								$consulta_last_q = <<<SQL
-									SELECT
-										*
-									FROM
-										financials_quarters
-									WHERE
-										ANIO = YEAR(NOW()) AND QUARTER = '$quarter_actual'
-									LIMIT 6
+				<?php
+					$consulta_quarters = <<<SQL
+						SELECT DISTINCT 
+							ANIO, 
+							QUARTER 
+						FROM 
+							financials_quarters 
+						ORDER BY ANIO DESC, QUARTER DESC 
+						LIMIT 4
 SQL;
 
-								$filas_q = mysqli_query($conexion, $consulta_last_q);
+					$ex_consulta_quarters = mysqli_query($conexion, $consulta_quarters);
 
-								while($array_q = mysqli_fetch_assoc($filas_q)){
-							?>
-								<li class="white 
+					$contador = 0;
+					$anio = 0;
+					while($array_consulta_quarters = mysqli_fetch_assoc($ex_consulta_quarters)):
+				?>
+						<div class="col-3 quarter <?php if($contador == 0){ echo 'last';} ?>">
+							<h5 class="h5">
+								<?php 
+									if($array_consulta_quarters['ANIO'] != $anio){
+										echo $array_consulta_quarters['ANIO'];
+										$anio = $array_consulta_quarters['ANIO'];
+									} else {
+										echo '&nbsp;';
+									}
+								?>	
+							</h5>
+							<div class="pack">
+								<p class="<?php if($contador == 0){ echo 'white';} else { echo 'grey3';} ?>"><?php echo $array_consulta_quarters['QUARTER'] ?></p>
+								<ul>
+									<?php
+										$this_quarter = $array_consulta_quarters['QUARTER'];
+
+										$consulta_archivos = <<<SQL
+											SELECT
+												*
+											FROM
+												financials_quarters
+											WHERE
+												QUARTER = '$this_quarter'
+SQL;
+
+										$ex_consulta_archivos = mysqli_query($conexion, $consulta_archivos);
+
+										while($array_consulta_archivos = mysqli_fetch_assoc($ex_consulta_archivos)):
+											if($array_consulta_archivos['ANIO'] == $array_consulta_quarters['ANIO']):
+									?>
+												<li class="
+													<?php 
+														if($contador == 0){
+															echo 'white';
+														} else { 
+															echo 'grey3';
+														} 
+
+														echo ' ';	
+														
+														if($array_consulta_archivos['FORMATO'] == 'pdf'){ 
+															echo 'pdf';
+														} else if($array_consulta_archivos['FORMATO'] == 'mp3'){
+															echo 'mp3';
+														} else if($array_consulta_archivos['FORMATO'] == 'xls'){
+															echo 'xls';
+														}
+													?>"><a href="javascript:;"><?php echo $array_consulta_archivos['TITULO']?></a></li>
 									<?php 
-										if($array_q['FORMATO'] == 'pdf'){ 
-											echo 'pdf';
-										} else if($array_q['FORMATO'] == 'mp3'){
-											echo 'mp3';
-										} else if($array_q['FORMATO'] == 'xls'){
-											echo 'xls';
-										}
-									?>">
-									<a href="uploads/<?php echo $array_q['ARCHIVO'] ?>" target="_blank"><?php echo $array_q['TITULO'] ?></a>
-								</li>
-							<?php
-								}
-							?>
-						</ul>
-					</div>
-				</div>
-				<div class="col-3 quarter">
-					<h5 class="h5"><?php echo (date("Y") - 1)?></h5>
+											endif;
+										endwhile;
+									?>
+								</ul>
+							</div>
+						</div>
+				<?php
+						$contador++;
+
+					endwhile;
+				?>
+				<!-- <div class="col-3 quarter">
+					<h5 class="h5">2017</h5>
 					<div class="pack">
 						<p class="grey3">Q4</p>
 						<ul>
@@ -93,8 +125,9 @@ SQL;
 							<li class="grey3 xls"><a href="javascript:;">Q1 ’17 Business Division segmented Spreadsheets</a></li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 			</div>
+
 			<div class="years text-right">
 				<a href="javascript:;" class="grey3">#</a>
 				<a href="javascript:;" class="grey3">2017</a>
