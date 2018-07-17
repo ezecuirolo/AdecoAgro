@@ -5,12 +5,24 @@
 	<section id="hero">
 		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner">
-				<div class="carousel-item report white active">
+				<?php
+					$consulta_header = <<<SQL
+						SELECT
+							*
+						FROM
+							header
+						LIMIT 1
+SQL;
+
+					$rta_header = mysqli_query($conexion, $consulta_header);
+					$content_header = mysqli_fetch_assoc($rta_header);
+				?>
+				<div class="carousel-item report white active" style="background: url('uploads/<?php echo $content_header['FONDO'] ?>')">
 					<div class="container">
-						<h2 class="h1 bd-font">AGRO Q1 2018<br>Earnings available</h2>
-						<p>Get the latest reports package release in our financials section. <a href="javascript:;">See more</a></p>
-						<a class="link caps" href="javascript:;">Annual Report Meeting</a>
-						<a class="link caps" href="javascript:;">SEC Filings</a>
+						<h2 class="h1 bd-font"><?php echo nl2br($content_header['TITLE']) ?></h2>
+						<p><?php echo $content_header['TEXT'] ?> <a href="javascript:;">See more</a></p>
+						<a class="link caps" href="uploads/<?php echo $content_header['FILE_ONE'] ?>"><?php echo $content_header['TITLE_FILE_ONE'] ?></a>
+						<a class="link caps" href="uploads/<?php echo $content_header['FILE_TWO'] ?>"><?php echo $content_header['TITLE_FILE_TWO'] ?></a>
 						<img class="desktop-only" src="img/icon-nyse_listed-trans.png" />
 					</div>
 				</div>

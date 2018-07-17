@@ -39,7 +39,13 @@ section.text img.centered { float:none; display:block; }
 
 
 /* Home */
-body > #home > #hero .report { background:url(../img/bg-home-first-slide.jpg) center bottom no-repeat; background-size:cover; height:450px; }
+body > #home > #hero .report { 
+	background-position: center bottom; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	height: 450px; 
+}
+
 body > #home > #hero .report h2 { margin-bottom:30px; }
 body > #home > #hero .report p { font-size:18px; width:300px; max-width:100%; line-height:1.5em; margin-bottom:50px; }
 body > #home > #hero .report p a { font-weight:600; }

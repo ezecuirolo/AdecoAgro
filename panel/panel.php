@@ -14,6 +14,7 @@
 
 			<nav>
 				<ul>
+					<li><a href="panel.php?s=header">Header</a></li>
 					<li><a href="panel.php?s=news">Noticias</a></li>
 					<li><a href="panel.php?s=financials">Finanzas</a></li>
 					<li><a href="actions/logout.php">Cerrar sesión</a></li>
@@ -26,7 +27,13 @@
 		<div class="container">
 			<?php
 				if(!isset($_GET['s'])){
-					include('modulos/news.php');
+					include('modulos/header.php');
+				} else if($_GET['s'] == 'header'){
+					if(!isset($_GET['action'])){
+						include('modulos/header.php');
+					} else if($_GET['action'] == 'edit'){
+						include('modulos/edit_header.php');
+					}
 				} else if($_GET['s'] == 'news'){
 					if(!isset($_GET['action'])){
 						include('modulos/news.php');

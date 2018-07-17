@@ -182,6 +182,10 @@ body.panel section .content form div textarea  {
 	outline: none;
 }
 
+body.panel section .content form div img {
+	width: 100%;
+}
+
 body.panel section .content form input[type="submit"] {
 	background: #005837;
 	color: #fff;
@@ -201,4 +205,12 @@ body.panel section .content form + div {
 body.panel section .content form + div p {
 	margin-bottom: 10px;
 	text-align: right;
+}
+
+body.panel section .content ul li {
+	margin-bottom: 20px;
+}
+
+body.panel section .content ul li img {
+	width: 100%;
 }
