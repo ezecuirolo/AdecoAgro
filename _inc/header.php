@@ -13,34 +13,52 @@
 				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
 					<ul class="navbar-nav desktop-only">
 						<li class="nav-item">
-							<a href="#" class="nav-link" id="sub1">Company &amp; Governance <span class="sr-only">(current)</span></a>
+							<a href="javascript:;" class="nav-link" id="sub1">Company<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link" id="sub2">Our Assets</a>
+							<a href="javascript:;" class="nav-link" id="sub2">Governance <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link" id="sub3">Financials</a>
+							<a href="javascript:;" class="nav-link" id="sub3">Financials</a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link" id="sub-blank">Our Assets</a>
+						</li>
+						<li class="nav-item">
+							<a href="http://www.adecoagro.com/" target="_blank" class="nav-link" alt="Adecoagro Global Site">&nbsp;</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav mobile-only white">
 						<li class="nav-item">
-							<a href="#" class="nav-link">Company &amp; Governance <i class="fas fa-angle-down"></i></a>
+							<a href="javascript:;" class="nav-link">Company <i class="fas fa-angle-down"></i></a>
 							<div class="submenu">
-								<a href="#">askda aslkdj asdj sd</a>
+								<a href="javascript:;">askda aslkdj asdj sd</a>
 							</div>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Our Assets <i class="fas fa-angle-down"></i></a>
+							<a href="javascript:;" class="nav-link">Governance <i class="fas fa-angle-down"></i></a>
+							<div class="submenu">
+								<a href="javascript:;">askda aslkdj asdj sd</a>
+							</div>
 						</li>
 						<li class="nav-item">
-							<a href="#" class="nav-link">Financials <i class="fas fa-angle-down"></i></a>
+							<a href="javascript:;" class="nav-link">Financials <i class="fas fa-angle-down"></i></a>
+						</li>
+						<li class="nav-item">
+							<a href="javascript:;" class="nav-link">Our Assets <i class="fas fa-angle-down"></i></a>
+						</li>
+						<li class="nav-item grey4">
+							<a href="http://www.adecoagro.com/" target="_blank" class="nav-link grey4"><img src="img/iso-adecoagro.png" height="20">&nbsp;&nbsp;Adecoagro Global Site</a>
 						</li>
 					</ul>
 				</div>
 			</nav>
 		</div>
 		<ul id="submenu1" class="sub bg-light text-center desktop-only">
-			<li class="active"><a href="index.php?s=strategy">Strategy</a></li><li><a href="#">Organizational Structure</a></li><li><a href="javascript:;">Institutional Presentation</a></li><li><a href="#">Board of Directors</a></li><li><a href="#">Executive Officers</a></li><li><a href="#">Dividend policy</a></li><li><a href="#">Bylaws</a></li><li><a href="#">Code of Ethics</a></li><li><a href="#">Insider Trading Policy</a></li><li><a href="#">Annual General Meeting</a></li>
+			<li class="active"><a href="index.php?s=strategy">Strategy</a></li><li><a href="#">Organizational Structure</a></li><li><a href="javascript:;">Institutional Presentation</a></li>
+		</ul>
+		<ul id="submenu2" class="sub bg-light text-center desktop-only">
+			<li><a href="#">Board of Directors</a></li><li><a href="#">Executive Officers</a></li><li><a href="#">Dividend policy</a></li><li><a href="#">Bylaws</a></li><li><a href="#">Code of Ethics</a></li><li><a href="#">Insider Trading Policy</a></li><li><a href="#">Annual General Meeting</a></li>
 		</ul>
 		<ul id="submenu3" class="sub bg-light text-center desktop-only">
 			<li class="active"><a href="index.php?s=financials#earnings">Quarterly Earnings</a></li>

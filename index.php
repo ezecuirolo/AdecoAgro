@@ -29,6 +29,8 @@
 					include('_inc/financials.php');
 				} else if($_GET['s'] == 'strategy'){
 					include('_inc/page01.php');
+				} else if($_GET['s'] == 'contact'){
+					include('_inc/contact.php');
 				}
 
 			include('_inc/footer.php'); 

@@ -11,6 +11,7 @@ header .logo img { margin:10px 0; height:38px; }
 header .navbar { padding:0; }
 header .sub { display:block; clear:both; background-color:#ddd; }
 
+
 /* Menu */
 header #navbarNav .nav-link { padding:30px; }
 header #navbarNav .mobile-only .grey4 { background:#fafafa; }
@@ -20,6 +21,8 @@ header #navbarNav .nav-item:hover { opacity:0.8; }
 header #navbarNav .nav-item:nth-of-type(1) { background-color:#8ec549; }
 header #navbarNav .nav-item:nth-of-type(2) { background-color:#2d9067; }
 header #navbarNav .nav-item:nth-of-type(3) { background-color:#005838; }
+header #navbarNav .nav-item:nth-of-type(4) { background-color:#666; }
+header #navbarNav .nav-item:nth-of-type(5) { background:url(../img/iso-adecoagro.png) no-repeat center; background-size:30px; background-color:#bbb; }
 header .navbar-toggler { background:#8dc63f; border:0; }
 header > .sub { display:none; }
 header .submenu { display:none; }
@@ -39,13 +42,7 @@ section.text img.centered { float:none; display:block; }
 
 
 /* Home */
-body > #home > #hero .report { 
-	background-position: center bottom; 
-	background-repeat: no-repeat; 
-	background-size: cover; 
-	height: 450px; 
-}
-
+body > #home > #hero .report { background-position:center bottom;	background-repeat:no-repeat; background-size:cover;	height:450px; }
 body > #home > #hero .report h2 { margin-bottom:30px; }
 body > #home > #hero .report p { font-size:18px; width:300px; max-width:100%; line-height:1.5em; margin-bottom:50px; }
 body > #home > #hero .report p a { font-weight:600; }
@@ -148,7 +145,7 @@ body > #events .jzdcal span a { width:40px; }
 body > #events span[data-title]:hover:after, 
 body > #events div[data-title]:hover:after { content:attr(data-title); position:absolute; margin:0 0 100px; background:#005838; border:1px solid #999; color:#fff; padding:5px; z-index:9999; min-width:150px; max-width:150px; }
 body > #events #upcoming {}
-body > #events #upcoming h3 { margin-bottom: 30px; }
+body > #events #upcoming h3 { margin-bottom:30px; }
 body > #events #upcoming .event { border:2px solid #ccc; padding:15px 150px 15px 20px; display:block; margin-bottom:15px; position:relative; transition:0.2s all; }
 body > #events #upcoming .event > span { position:absolute; top:15px; right:20px; }
 body > #events #upcoming .event:hover { background:#eee; color:#666; }
@@ -163,6 +160,7 @@ body > #event .content a.download { background-color:#005838; padding:15px 20px;
 body > #event .content a.download:hover { background-color:#2d9067; color:#fff; }
 body > #event .content a.download > i { margin-right:10px; font-size:20px; }
 
+
 /* Internal Page */
 .page > #hero { background-size:cover; background-repeat:no-repeat; background-position:center; }
 .page > #hero .container { position:relative; }
@@ -170,6 +168,7 @@ body > #event .content a.download > i { margin-right:10px; font-size:20px; }
 .page .content { padding:30px 0; }
 .page .content > .container > * { margin-bottom:45px; }
 .page .content .h4 { margin-top:30px; margin-bottom:20px; }
+
 
 /* Footer */
 footer .newsletter { background-image:url(../img/bg-newsletter.jpg); background-repeat:no-repeat; background-position:center; background-size:cover; padding:50px 0; }
@@ -187,7 +186,7 @@ footer ul { margin-top:30px; }
 footer ul li { margin-bottom:8px; }
 footer .down .row:nth-of-type(2) { margin-top:50px; }
 footer .down .txt { margin-top:30px; }
-footer .stock { padding:30px 25; background-color:#005838; }
+footer .stock { padding:30px 25px; background-color:#005838; }
 footer .stock .h3 { margin-bottom:30px; }
 footer .stock .row > div { margin-bottom:10px; }
 footer .marks { width:350px; height:auto; }
