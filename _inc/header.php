@@ -32,13 +32,13 @@
 						<li class="nav-item">
 							<a href="javascript:;" class="nav-link">Company <i class="fas fa-angle-down"></i></a>
 							<div class="submenu">
-								<a href="javascript:;">askda aslkdj asdj sd</a>
+								<a href="javascript:;">Link 1</a>
 							</div>
 						</li>
 						<li class="nav-item">
 							<a href="javascript:;" class="nav-link">Governance <i class="fas fa-angle-down"></i></a>
 							<div class="submenu">
-								<a href="javascript:;">askda aslkdj asdj sd</a>
+								<a href="javascript:;">Link 1</a>
 							</div>
 						</li>
 						<li class="nav-item">
@@ -55,7 +55,7 @@
 			</nav>
 		</div>
 		<ul id="submenu1" class="sub bg-light text-center desktop-only">
-			<li class="active"><a href="index.php?s=strategy">Strategy</a></li><li><a href="#">Organizational Structure</a></li><li><a href="javascript:;">Institutional Presentation</a></li>
+			<li class="active"><a href="index.php?s=strategy">Strategy</a></li><li><a href="#">Organizational Structure</a></li><li><a href="javascript:;">Institutional Presentation</a></li><li><a href="javascript:;">Business Divisions</a></li>
 		</ul>
 		<ul id="submenu2" class="sub bg-light text-center desktop-only">
 			<li><a href="#">Board of Directors</a></li><li><a href="#">Executive Officers</a></li><li><a href="#">Dividend policy</a></li><li><a href="#">Bylaws</a></li><li><a href="#">Code of Ethics</a></li><li><a href="#">Insider Trading Policy</a></li><li><a href="#">Annual General Meeting</a></li>
