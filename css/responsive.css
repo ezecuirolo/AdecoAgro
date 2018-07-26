@@ -46,6 +46,8 @@
 	.carousel-control-prev { width:7%; }
 	.carousel-control-next-icon,
 	.carousel-control-prev-icon { width:40px; height:auto; }
+	body > #home > #why-invest .reasons .icon { display:inline-block; margin-right:25px; width:calc((100% - 100px) / 5); }
+	body > #home > #why-invest .reasons .icon:last-of-type { margin-right:0; }
 	body > #event .content img { max-width:50%; }
 }
 

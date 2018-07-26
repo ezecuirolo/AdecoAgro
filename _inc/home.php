@@ -102,37 +102,45 @@ SQL;
 			<h2 class="h2 bd-font text-center">Why to invest in Adecoagro?</h2>
 			
 			<div class="row reasons text-center">
-				<div class="col-md-3 icon">
+				<div class="icon">
 					<div class="head">
 						<p class="h3">1.</p>
 						<img src="img/icon-home-why01.png" />
 					</div>
-					<!-- <strong>Reason title</strong><br> -->
-					<p>Leading agricultural company in one of the richest supply regions</p>
+					<strong>Low cost producer</strong><br>
+					<p>We produce in specific regions where the combination of agro-ecological conditions, together with our expertise, would allow us to become the lowest cost producer.</p>
 				</div>
-				<div class="col-md-3 icon">
+				<div class="icon">
 					<div class="head">
 						<p class="h3">2.</p>
 						<img src="img/icon-home-why02.png" />
 					</div>
-					<!-- <strong>Reason title</strong><br> -->
-					<p>Solid business divisions</p>
+					<strong>Diversified operations across the region</strong><br>
+					<p>Our assets spread across the most productive regions of Argentina, Brazil and Uruguay. We produce a wide range of agricultural products. Geographics and product diversification protect us from weather risk and commodity price volatility.</p>
 				</div>
-				<div class="col-md-3 icon">
+				<div class="icon">
 					<div class="head">
 						<p class="h3">3.</p>
 						<img src="img/icon-home-why03.png" />
 					</div>
-					<!-- <strong>Reason title</strong><br> -->
-					<p>A strong and non-negotiable sustainability policy</p>
+					<strong>Best environmental, social and governance (ESG) practices</strong><br>
+					<p>We have three main pillars that interact among each other generating a virtuous cycle: a) economic sustainability, b) environmental sustainability; and c) social sustainability.</p>
 				</div>
-				<div class="col-md-3 icon">
+				<div class="icon">
 					<div class="head">
 						<p class="h3">4.</p>
 						<img src="img/icon-home-why04.png" />
 					</div>
-					<!-- <strong>Reason title</strong><br> -->
-					<p>Seamless, fluid communication with our shareholders</p>
+					<strong>Commitment to shareholder value</strong><br>
+					<p>A disciplined capital allocation strategy to generate the highest returns to our shareholders.</p>
+				</div>
+				<div class="icon">
+					<div class="head">
+						<p class="h3">5.</p>
+						<img src="img/icon-home-why05.png" />
+					</div>
+					<strong>Positive free cash flow generation</strong><br>
+					<p>Positive free cash flow generation since 2015, despite commodity cycle volatility.</p>
 				</div>
 			</div>
 			
