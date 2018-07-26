@@ -50,11 +50,13 @@ body > #home > #hero .report a.link { padding-left:25px; margin-right:20px; back
 body > #home > #hero .report .container { position:relative; }
 body > #home > #hero .report img { position:absolute; bottom:0; right:15px; }
 body > #home > #hero .carousel-item { padding:50px 0; }
-body > #home > #why-invest { padding:80px 0; }
+body > #home > #why-invest { padding:80px 0; background-color:#8ec549; }
 body > #home > #why-invest h2 { margin-bottom:20px; }
-body > #home > #why-invest .icons { margin:60px 0 90px; }
-body > #home > #why-invest .icons > div { opacity:0.7; transition:0.5s all; }
-body > #home > #why-invest .icons > div:hover { opacity:1; }
+body > #home > #why-invest .reasons { margin:60px 0 90px; }
+body > #home > #why-invest .reasons .icon .head { text-align:center; }
+body > #home > #why-invest .reasons .icon .head > p { display:inline-block; font-weight:700; }
+body > #home > #why-invest .reasons .icon .head img { display:inline-block; height:120px; transition:0.5s all; }
+body > #home > #why-invest .reasons .icon:hover .head img { height:180px; }
 body > #home > #why-invest .nyse { width:335px; max-width:100%; display:block; margin:0 auto; }
 body > #home > #why-invest .nyse > * { display:inline-block; vertical-align:middle; }
 body > #home > #why-invest .nyse > img { width:50px; opacity:0.4; margin-bottom:10px; margin-right:15px; }
@@ -115,6 +117,11 @@ body > #financials #earnings .pack > ul > li { padding-left:35px; background-pos
 body > #financials #earnings .pack > ul > li:hover > a { color:#666; }
 body > #financials #earnings .last .pack > ul > li:hover > a { color:#ccc; }
 body > #financials #earnings .years { margin-bottom:20px; }
+body > #financials #agm { padding:50px 0; }
+body > #financials #agm .meetings { padding-top:20px; }
+body > #financials #agm h3 { margin:50px 0 30px; }
+body > #financials #agm a.button { display:block; padding:15px; color:#fff; background-color:#2d9067; margin-bottom:20px; font-size:20px; }
+body > #financials #agm a.button:hover { background-color:#005838; }
 body > #financials #sec-filings { padding:50px 0; }
 body > #financials #sec-filings select,
 body > #financials #sec-filings select * { font-size:15px; }

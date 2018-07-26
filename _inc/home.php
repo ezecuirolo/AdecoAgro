@@ -38,35 +38,6 @@ SQL;
 		</div>
 	</section>
 		
-	<section id="why-invest">
-		<div class="container">
-			<h2 class="h2 bd-font grey2 text-center">Why to invest in Adecoagro?</h2>
-			
-			<div class="row icons text-center grey3">
-				<div class="col-md-3">
-					<img src="img/icon-home-why01.png" />
-					<p>Leading agricultural company in one of the richest supply regions</p>
-				</div>
-				<div class="col-md-3">
-					<img src="img/icon-home-why02.png" />
-					<p>Solid business divisions</p>
-				</div>
-				<div class="col-md-3">
-					<img src="img/icon-home-why03.png" />
-					<p>A strong and non-negotiable sustainability policy</p>
-				</div>
-				<div class="col-md-3">
-					<img src="img/icon-home-why04.png" />
-					<p>Seamless, fluid communication with our shareholders</p>
-				</div>
-			</div>
-			
-			<div class="nyse">
-				<img src="img/icon-nyse_listed.png" class="centered"><small class="grey4">On top of our compromise,<br>we are a NYSE listed company with clear trade background.</small>
-			</div>
-		</div>
-	</section>
-		
 	<section id="invest-reports">
 		<div class="container">
 			<div class="row">
@@ -122,6 +93,51 @@ SQL;
 						<img src="img/icon-home-contact.png"><br>Contact IR
 					</a>
 				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="why-invest" class="white">
+		<div class="container">
+			<h2 class="h2 bd-font text-center">Why to invest in Adecoagro?</h2>
+			
+			<div class="row reasons text-center">
+				<div class="col-md-3 icon">
+					<div class="head">
+						<p class="h3">1.</p>
+						<img src="img/icon-home-why01.png" />
+					</div>
+					<!-- <strong>Reason title</strong><br> -->
+					<p>Leading agricultural company in one of the richest supply regions</p>
+				</div>
+				<div class="col-md-3 icon">
+					<div class="head">
+						<p class="h3">2.</p>
+						<img src="img/icon-home-why02.png" />
+					</div>
+					<!-- <strong>Reason title</strong><br> -->
+					<p>Solid business divisions</p>
+				</div>
+				<div class="col-md-3 icon">
+					<div class="head">
+						<p class="h3">3.</p>
+						<img src="img/icon-home-why03.png" />
+					</div>
+					<!-- <strong>Reason title</strong><br> -->
+					<p>A strong and non-negotiable sustainability policy</p>
+				</div>
+				<div class="col-md-3 icon">
+					<div class="head">
+						<p class="h3">4.</p>
+						<img src="img/icon-home-why04.png" />
+					</div>
+					<!-- <strong>Reason title</strong><br> -->
+					<p>Seamless, fluid communication with our shareholders</p>
+				</div>
+			</div>
+			
+			<div class="nyse white">
+				<img src="img/icon-nyse_listed.png" class="centered"><small>On top of our compromise,<br>we are a NYSE listed company with clear trade background.</small>
 			</div>
 		</div>
 	</section>

@@ -150,8 +150,26 @@ SQL;
 			<small class="grey2">Some of the information or materials made available on this website may contain forward-looking statements. Statements including words such as "believe," "may," "will," "estimate," "continue," "anticipate," "intend," "expect" or similar expressions are intended to identify forward-looking statements. These forward-looking statements are subject to assumptions, risks and uncertainties that could cause actual events or actual future results to differ materially from the expectations set forth in the forward-looking statements. Some of the factors which could cause Adecoagro’s results to differ materially from its expectations include, but are not limited to, those described in detail in the <a href="javascript:;">Risk Factors page.</a></small>
 		</div>
 	</section>
+	
+	<section id="agm">
+		<div class="container">
+			<h3 class="h3 bd-font grey4">Annual General Meetings</h3>
+			<h5 class="txt-bold grey2">GENERAL INFORMATION</h5>
+			<p>Date: Wednesday, April 18, 2018<br>Time: AGM at  12 pm (CET), Luxembourg Time<br>Location: Vertigo Naos Building, 6 Rue Eugène Ruppert, L - 2453 Luxembourg</p>
+			<div class="row meetings">
+				<div class="col-sm-6">
+					<a class="button white" href="javascript:;"><i class="fas fa-caret-right grey2"></i> Agenda AGM 2018</a>
+					<a class="button white" href="javascript:;"><i class="fas fa-caret-right grey2"></i> Proxy Card for AGM 2018</a>
+					<a class="button white" href="javascript:;"><i class="fas fa-caret-right grey2"></i> Convening Notice with Board of Directors recommendations</a>
+				</div>
+				<div class="col-sm-6">
+					<a class="button white" href="javascript:;"><i class="fas fa-caret-right grey2"></i> Annual accounts and annual report as of December 31, 2017<br>and Consolidated Financial Statements as of and for the years ended<br>December 31, 2017, 2016, and 2015</a>
+				</div>
+			</div>
+		</div>
+	</section>
 		
-	<section id="sec-filings">
+	<!-- <section id="sec-filings">
 		<div class="container">
 			<h3 class="h3 bd-font grey4">SEC Filings</h3>
 			<form class="text-right">
@@ -221,5 +239,5 @@ SQL;
 				</tbody>
 			</table>
 		</div>
-	</section>	
+	</section> -->
 </div>
