@@ -17,7 +17,7 @@
 							<li><a href="javascript:;">Global Site</a></li>
 							<li><a href="javascript:;">Business Divisions</a></li>
 							<li><a href="javascript:;">Sustainability</a></li>
-							<li><a href="javascript:;">Contact</a></li>
+							<li><a href="index.php?s=contact">Contact</a></li>
 						</ul>
 					</div>
 					<div class="col-md-6 col-lg-3 txt">
