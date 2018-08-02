@@ -157,14 +157,28 @@ SQL;
 			<h5 class="txt-bold grey2">GENERAL INFORMATION</h5>
 			<p>Date: Wednesday, April 18, 2018<br>Time: AGM at  12 pm (CET), Luxembourg Time<br>Location: Vertigo Naos Building, 6 Rue Eugène Ruppert, L - 2453 Luxembourg</p>
 			<div class="row meetings">
-				<div class="col-sm-6">
-					<a class="button white" href="javascript:;"><i class="fas fa-caret-right grey2"></i> Agenda AGM 2018</a>
-					<a class="button white" href="javascript:;"><i class="fas fa-caret-right grey2"></i> Proxy Card for AGM 2018</a>
-					<a class="button white" href="javascript:;"><i class="fas fa-caret-right grey2"></i> Convening Notice with Board of Directors recommendations</a>
+				<div class="col">
+					<!-- <a class="button white" href="javascript:;"><i class="fas fa-caret-right grey2"></i> Agenda AGM 2018</a> -->
+					<?php
+						$consulta_agm = <<<SQL
+							SELECT
+								*
+							FROM
+								AGM
+SQL;
+
+						$filas_agm = mysqli_query($conexion, $consulta_agm);
+
+						while($a_agm = mysqli_fetch_assoc($filas_agm)){
+					?>
+						<a class="button white" href="uploads/<?php echo $a_agm['DOCUMENTO'] ?>" target="_blank" download><i class="fas fa-caret-right grey2"></i> <?php echo $a_agm['TITULO'] ?></a>
+					<?php
+						}
+					?>
 				</div>
-				<div class="col-sm-6">
+				<!-- <div class="col-sm-6">
 					<a class="button white" href="javascript:;"><i class="fas fa-caret-right grey2"></i> Annual accounts and annual report as of December 31, 2017<br>and Consolidated Financial Statements as of and for the years ended<br>December 31, 2017, 2016, and 2015</a>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</section>

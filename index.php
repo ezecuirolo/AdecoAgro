@@ -27,7 +27,29 @@
 				} else if($_GET['s'] == 'financials'){
 					include('_inc/financials.php');
 				} else if($_GET['s'] == 'strategy'){
-					include('_inc/page01.php');
+					include('_inc/strategy.php');
+				} else if($_GET['s'] == 'organizational-structure'){
+					include('_inc/organizational-structure.php');
+				} else if($_GET['s'] == 'institutional-presentation'){
+					include('_inc/institutional-presentation.php');
+				} else if($_GET['s'] == 'business-divisions'){
+					include('_inc/business-divisions.php');
+				} else if($_GET['s'] == 'board-of-directors'){
+					include('_inc/board-of-directors.php');
+				} else if($_GET['s'] == 'executive-officers'){
+					include('_inc/executive-officers.php');
+				} else if($_GET['s'] == 'dividend-policy'){
+					include('_inc/dividend-policy.php');
+				} else if($_GET['s'] == 'bylaws'){
+					include('_inc/bylaws.php');
+				} else if($_GET['s'] == 'code-of-ethics'){
+					include('_inc/code-of-ethics.php');
+				} else if($_GET['s'] == 'insider-trading-policy'){
+					include('_inc/insider-trading-policy.php');
+				} else if($_GET['s'] == 'annual-general-meeetings'){
+					include('_inc/annual-general-meeetings.php');
+				} else if($_GET['s'] == 'events'){
+					include('_inc/events.php');
 				} else if($_GET['s'] == 'contact'){
 					include('_inc/contact.php');
 				}

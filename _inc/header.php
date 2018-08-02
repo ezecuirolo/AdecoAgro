@@ -19,7 +19,7 @@
 							<a href="javascript:;" class="nav-link" id="sub2">Governance <span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="javascript:;" class="nav-link" id="sub3">Financials</a>
+							<a href="index.php?s=financials" class="nav-link">Financials</a>
 						</li>
 						<li class="nav-item">
 							<a href="javascript:;" class="nav-link" id="sub-blank">Our Assets</a>
@@ -55,13 +55,18 @@
 			</nav>
 		</div>
 		<ul id="submenu1" class="sub bg-light text-center desktop-only">
-			<li class="active"><a href="index.php?s=strategy">Strategy</a></li><li><a href="#">Organizational Structure</a></li><li><a href="javascript:;">Institutional Presentation</a></li><li><a href="javascript:;">Business Divisions</a></li>
+			<li class="active"><a href="index.php?s=strategy">Strategy</a></li>
+			<li><a href="index.php?s=organizational-structure">Organizational Structure</a></li>
+			<li><a href="index.php?s=institutional-presentation">Institutional Presentation</a></li>
+			<li><a href="index.php?s=business-divisions">Business Divisions</a></li>
 		</ul>
 		<ul id="submenu2" class="sub bg-light text-center desktop-only">
-			<li><a href="#">Board of Directors</a></li><li><a href="#">Executive Officers</a></li><li><a href="#">Dividend policy</a></li><li><a href="#">Bylaws</a></li><li><a href="#">Code of Ethics</a></li><li><a href="#">Insider Trading Policy</a></li><li><a href="#">Annual General Meeting</a></li>
-		</ul>
-		<ul id="submenu3" class="sub bg-light text-center desktop-only">
-			<li class="active"><a href="index.php?s=financials#earnings">Quarterly Earnings</a></li>
-			<li><a href="index.php?s=financials#sec-filings">SEC Filings</a></li>
+			<li><a href="index.php?s=board-of-directors">Board of Directors</a></li>
+			<li><a href="index.php?s=executive-officers">Executive Officers</a></li>
+			<li><a href="index.php?s=dividend-policy">Dividend policy</a></li>
+			<li><a href="index.php?s=bylaws">Bylaws</a></li>
+			<li><a href="index.php?s=code-of-ethics">Code of Ethics</a></li>
+			<li><a href="index.php?s=insider-trading-policy">Insider Trading Policy</a></li>
+			<li><a href="index.php?s=annual-general-meeetings">Annual General Meeting</a></li>
 		</ul>
 	</header>

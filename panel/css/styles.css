@@ -117,6 +117,11 @@ body.panel section header a {
 	color: #fff;
 }
 
+body.panel section .content table,
+body.panel section .content table tbody {
+	width: 100%;
+}
+
 body.panel section .content table tr th,
 body.panel section .content table tr td {
 	padding: 10px;

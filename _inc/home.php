@@ -37,7 +37,7 @@ SQL;
 			</a>-->
 		</div>
 	</section>
-		
+
 	<section id="invest-reports">
 		<div class="container">
 			<div class="row">
@@ -66,9 +66,9 @@ SQL;
 
 								while($array_q = mysqli_fetch_assoc($filas_q)){
 							?>
-								<li class="grey3 
-									<?php 
-										if($array_q['FORMATO'] == 'pdf'){ 
+								<li class="grey3
+									<?php
+										if($array_q['FORMATO'] == 'pdf'){
 											echo 'pdf';
 										} else if($array_q['FORMATO'] == 'mp3'){
 											echo 'mp3';
@@ -96,11 +96,11 @@ SQL;
 			</div>
 		</div>
 	</section>
-	
+
 	<section id="why-invest" class="white">
 		<div class="container">
 			<h2 class="h2 bd-font text-center">Why to invest in Adecoagro?</h2>
-			
+
 			<div class="row reasons text-center">
 				<div class="icon">
 					<div class="head">
@@ -143,13 +143,13 @@ SQL;
 					<p>Positive free cash flow generation since 2015, despite commodity cycle volatility.</p>
 				</div>
 			</div>
-			
+
 			<div class="nyse white">
 				<img src="img/icon-nyse_listed.png" class="centered"><small>On top of our compromise,<br>we are a NYSE listed company with clear trade background.</small>
 			</div>
 		</div>
 	</section>
-	
+
 	<section id="infonews" class="home">
 		<div class="container">
 			<div class="row">
@@ -178,7 +178,7 @@ SQL;
 							<span><?php echo $a_news['TITULO'] ?></span>
 							<!-- <span class="txt-bold">Watch video</span> -->
 						</a>
-					<?php		
+					<?php
 						}
 					?>
 				</div>
@@ -216,7 +216,7 @@ SQL;
 							<span class="caps">Aug 8</span><br>
 							<span class="">Earnings release event</span>
 						</a>
-						<a href="javascript:;" class="alt-green2"><i class="far fa-calendar-alt"></i> See full calendar</a>
+						<a href="index.php?s=events" class="alt-green2"><i class="far fa-calendar-alt"></i> See full calendar</a>
 					</div>
 				</div>
 			</div>

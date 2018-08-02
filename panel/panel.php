@@ -17,6 +17,7 @@
 					<li><a href="panel.php?s=header">Header</a></li>
 					<li><a href="panel.php?s=news">Noticias</a></li>
 					<li><a href="panel.php?s=financials">Finanzas</a></li>
+					<li><a href="panel.php?s=agm">AGM</a></li>
 					<li><a href="actions/logout.php">Cerrar sesión</a></li>
 				</ul>
 			</nav>
@@ -43,6 +44,26 @@
 						include('modulos/edit_news.php');
 					} else {
 						include('modulos/news.php');	
+					}
+				} else if($_GET['s'] == 'financials'){
+					if(!isset($_GET['action'])){
+						include('modulos/financials.php');
+					} else if($_GET['action'] == 'new'){
+						include('modulos/new_financials.php');
+					} else if($_GET['action'] == 'edit'){
+						include('modulos/edit_financials.php');
+					} else {
+						include('modulos/financials.php');	
+					}
+				} else if($_GET['s'] == 'agm'){
+					if(!isset($_GET['action'])){
+						include('modulos/agm.php');
+					} else if($_GET['action'] == 'new'){
+						include('modulos/new_agm.php');
+					} else if($_GET['action'] == 'edit'){
+						include('modulos/edit_agm.php');
+					} else {
+						include('modulos/agm.php');	
 					}
 				}
 			?>
