@@ -64,11 +64,11 @@ SQL;
 
 														echo ' ';	
 														
-														if($array_consulta_archivos['FORMATO'] == 'pdf'){ 
+														if(strtolower($array_consulta_archivos['FORMATO']) == 'pdf'){ 
 															echo 'pdf';
-														} else if($array_consulta_archivos['FORMATO'] == 'mp3'){
+														} else if(strtolower($array_consulta_archivos['FORMATO']) == 'mp3'){
 															echo 'mp3';
-														} else if($array_consulta_archivos['FORMATO'] == 'xls'){
+														} else if(strtolower($array_consulta_archivos['FORMATO']) == 'xls'){
 															echo 'xls';
 														}
 													?>"><a href="javascript:;"><?php echo $array_consulta_archivos['TITULO']?></a></li>

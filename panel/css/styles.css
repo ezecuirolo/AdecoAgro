@@ -136,6 +136,7 @@ body.panel section .content table tr th {
 
 body.panel section .content table tr td {
 	font-size: 0.9rem;
+	text-align: center;
 }
 
 body.panel section .content table tr td:nth-last-child(2),

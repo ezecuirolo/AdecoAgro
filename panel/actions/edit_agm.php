@@ -20,7 +20,7 @@
 				}
 			}
 
-	$consulta .= "WHERE ID = $id";
+	$consulta .= " WHERE ID = $id";
 
 	if(mysqli_query($conexion, $consulta)){
 		header('Location: ../panel.php?s=agm&status=ok');
