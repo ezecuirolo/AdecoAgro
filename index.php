@@ -50,6 +50,8 @@
 					include('_inc/annual-general-meeetings.php');
 				} else if($_GET['s'] == 'events'){
 					include('_inc/events.php');
+				} else if($_GET['s'] == 'event'){
+					include('_inc/event.php');
 				} else if($_GET['s'] == 'contact'){
 					include('_inc/contact.php');
 				}

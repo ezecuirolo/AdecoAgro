@@ -57,7 +57,7 @@
 		<ul id="submenu1" class="sub bg-light text-center desktop-only">
 			<li class="active"><a href="index.php?s=strategy">Strategy</a></li>
 			<li><a href="index.php?s=organizational-structure">Organizational Structure</a></li>
-			<li><a href="index.php?s=institutional-presentation">Institutional Presentation</a></li>
+			<li><a href="pdf/AGRO-IR-presentation.pdf" target="_blank">Institutional Presentation</a></li>
 			<li><a href="index.php?s=business-divisions">Business Divisions</a></li>
 		</ul>
 		<ul id="submenu2" class="sub bg-light text-center desktop-only">

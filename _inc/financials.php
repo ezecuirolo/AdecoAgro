@@ -154,8 +154,8 @@ SQL;
 	<section id="agm">
 		<div class="container">
 			<h3 class="h3 bd-font grey4">Annual General Meetings</h3>
-			<h5 class="txt-bold grey2">GENERAL INFORMATION</h5>
-			<p>Date: Wednesday, April 18, 2018<br>Time: AGM at  12 pm (CET), Luxembourg Time<br>Location: Vertigo Naos Building, 6 Rue Eugène Ruppert, L - 2453 Luxembourg</p>
+			<!-- <h5 class="txt-bold grey2">GENERAL INFORMATION</h5>
+			<p>Date: Wednesday, April 18, 2018<br>Time: AGM at  12 pm (CET), Luxembourg Time<br>Location: Vertigo Naos Building, 6 Rue Eugène Ruppert, L - 2453 Luxembourg</p> -->
 			<div class="row meetings">
 				<div class="col">
 					<!-- <a class="button white" href="javascript:;"><i class="fas fa-caret-right grey2"></i> Agenda AGM 2018</a> -->
@@ -164,14 +164,14 @@ SQL;
 							SELECT
 								*
 							FROM
-								AGM
+								agm
 SQL;
 
 						$filas_agm = mysqli_query($conexion, $consulta_agm);
 
 						while($a_agm = mysqli_fetch_assoc($filas_agm)){
 					?>
-						<a class="button white" href="uploads/<?php echo $a_agm['DOCUMENTO'] ?>" target="_blank" download><i class="fas fa-caret-right grey2"></i> <?php echo $a_agm['TITULO'] ?></a>
+							<a class="button white" href="uploads/<?php echo $a_agm['DOCUMENTO'] ?>" target="_blank" download><i class="fas fa-caret-right grey2"></i> <?php echo $a_agm['TITULO'] ?></a>
 					<?php
 						}
 					?>

@@ -111,3 +111,132 @@ a:hover { background-color:rgba(255,255,255,0.2); }
 }
 
 section#hero.page_header { display:flex; align-items:center; margin-bottom:30px; }
+
+.page .content > .container > p > i.fas.fa-caret-right {
+    color: #005838 !important;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.page .content > .container > p > i.fas.fa-circle {
+    color: #005838 !important;
+    font-size: 6px;
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-bottom: 2px;
+}
+
+/* Estilos de negocios */
+
+.negocios {
+	padding: 50px 0;
+}
+
+.negocios ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.negocios ul li {
+    width: 18%;
+    text-align: center;
+    margin: 0 10px;
+    flex: 1;
+    position: relative;
+    min-height: 485px;
+    overflow: hidden;
+    border-radius: 0 0 50px 0 !important;
+}
+
+.negocios ul li div {
+    position: absolute;
+    bottom: 0;
+    transition: all 0.5s;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.negocios ul li div img {
+	width: 60px;
+	opacity: 1;
+	transition: all 0.5s;
+}
+
+.negocios ul li div h3 {
+	padding: 20px 10px;
+	color: #fff;
+	font-weight: 300;
+	font-size: 1em;
+	position: absolute;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.negocios ul li:hover div img {
+	opacity: 0;
+}
+
+.negocios ul li:hover div h3 {
+	opacity: 1;
+}
+
+.negocios ul li a {
+    display: block;
+    height: 100%;
+}
+
+.negocios ul li a > img {
+	position: absolute;
+	left: 0;
+	top: 0;
+    height: 100%;
+    width: 100%;
+	transition: all 0.5s;
+}
+
+.negocios ul li:hover a > img {
+	filter: brightness(0.6);
+}
+
+.negocios ul li:first-child div {
+	background: #B0633B;
+}
+
+.negocios ul li:nth-child(3) div {
+	background: #259FD9;
+}
+
+.negocios ul li:nth-child(2) div {
+	background: #D3932B;
+}
+
+.negocios ul li:nth-child(4) div {
+	background: #3CB54A;
+}
+
+.negocios ul li:last-child div {
+	background: #C83E27;
+}
+
+@media screen and (max-width: 768px){
+	.negocios ul {
+		display: block;
+	}
+
+	.negocios ul li {
+		width: 95%;
+		min-height: 80px;
+		display: inline-block;
+		border-radius: 0;
+	}
+
+	.negocios ul li a > img {
+		display: none;
+	}
+}

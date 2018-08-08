@@ -201,21 +201,46 @@ SQL;
 				<div class="col-md-4">
 					<div id="calendar" class="widget">
 						<h3 class="h3 bd-font white">Investor<br>Calendar</h3>
-						<a href="javascript:;" class="event white">
-							<i class="fas fa-caret-right"></i>
-							<span class="caps">Aug 8</span><br>
-							<span class="">Earnings release event</span>
-						</a>
-						<a href="javascript:;" class="event white">
-							<i class="fas fa-caret-right"></i>
-							<span class="caps">Aug 8</span><br>
-							<span class="">Earnings release event</span>
-						</a>
-						<a href="javascript:;" class="event white">
-							<i class="fas fa-caret-right"></i>
-							<span class="caps">Aug 8</span><br>
-							<span class="">Earnings release event</span>
-						</a>
+						<?php
+							$consulta_events = <<<SQL
+								SELECT
+									ID,
+									MES,
+									DIA,
+									TITULO,
+									FECHA
+								FROM
+									events
+								WHERE
+									FECHA >= NOW()
+								ORDER BY FECHA 
+								LIMIT 3
+SQL;
+							$filas_events = mysqli_query($conexion, $consulta_events);
+
+							$meses_abreviados = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+							while($a_events = mysqli_fetch_assoc($filas_events)):
+
+						?>
+							<a href="index.php?s=event&id=<?php echo $a_events['ID'] ?>" class="event white">
+								<i class="fas fa-caret-right"></i>
+								<?php 
+									for($i = 0; $i < count($meses_abreviados); $i++){
+										if($i + 1 == $a_events['MES']){
+								?>
+										<span class="caps"><?php echo $meses_abreviados[$i] . ' ' . $a_events['DIA'] ?></span>
+								<?php
+										}
+									}
+								?>
+
+								<br>
+								<span class=""><?php echo $a_events['TITULO'] ?></span>
+							</a>
+						<?php
+							endwhile;
+						?>
 						<a href="index.php?s=events" class="alt-green2"><i class="far fa-calendar-alt"></i> See full calendar</a>
 					</div>
 				</div>

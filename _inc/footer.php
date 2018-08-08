@@ -14,8 +14,8 @@
 					<div class="col-md-6 col-lg-3 txt">
 						<p class="h3 hlight bd-font">adecoagro</p>
 						<ul>
-							<li><a href="javascript:;">Global Site</a></li>
-							<li><a href="javascript:;">Business Divisions</a></li>
+							<li><a href="http://www.adecoagro.com/" target="_blank">Global Site</a></li>
+							<li><a href="index.php?s=business-divisions">Business Divisions</a></li>
 							<li><a href="javascript:;">Sustainability</a></li>
 							<li><a href="index.php?s=contact">Contact</a></li>
 						</ul>
