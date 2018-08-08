@@ -2,8 +2,9 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<style>
-		
-		.adecoagro-converter { width:500px; margin-left:auto; margin-right:auto; font-weight:500; font-family:"Nunito", sans-serif; color:#fff; background-image:url(img/converter-bg.png); background-color:#319065; background-repeat:no-repeat; background-position:bottom right; padding:40px 20px; }
+				
+		.adecoagro-converter * { font-family:"Nunito", sans-serif; box-sizing:border-box; border-radius:0 !important; }
+		.adecoagro-converter { width:500px; margin-left:auto; margin-right:auto; font-weight:500; color:#fff; background-image:url(img/converter-bg.png); background-color:#319065; background-repeat:no-repeat; background-position:bottom right; padding:40px 20px; }
 		.adecoagro-converter img { max-width:100%; margin-left:auto; margin-right:auto; float:none; margin:0 auto; display:block; }
 		.adecoagro-converter * { box-sizing:border-box; }
 			
@@ -12,11 +13,15 @@
 		.adecoagro-converter .display,
 		.adecoagro-converter .keys { margin-left:auto; margin-right:auto; width:380px; }
 		.adecoagro-converter .display .total { margin-top:30px; font-size:36px; }
-		.adecoagro-converter .display > div { margin-bottom:15px; border-radius:35px; padding:10px 25px; border-width:3px; border-color:#fff; border-style:solid; }
+		.adecoagro-converter .display input,
+		.adecoagro-converter .display select { margin-bottom:15px; /* border-radius:35px; */ color:#999; padding:10px 15px; border-width:3px; border-color:#fff; border-style:solid; border:none; border-radius:0; cursor:pointer; outline:none; padding-right:35px; padding-left:15px; -moz-appearance:none; -webkit-appearance:none; width:100%; }
+		.adecoagro-converter .display input,
+		.adecoagro-converter .display select,
+		.adecoagro-converter .display textarea { max-width:100%; font-size:15px; }
 		.adecoagro-converter .keys .numbers { width:235px; margin-right:15px; }
 		.adecoagro-converter .keys .numbers,
 		.adecoagro-converter .keys .eq { display:inline-block; vertical-align:top; }
-		.adecoagro-converter .keys .key { border-radius:25px; border-width:3px; border-style:solid; border-color:#fff; display:inline-block; margin-bottom:20px; }
+		.adecoagro-converter .keys .key { /* border-radius:25px; */ border-width:3px; border-style:solid; border-color:#fff; display:inline-block; margin-bottom:20px; }
 		.adecoagro-converter .keys .key > span { line-height:62px; font-size:20px; text-align:center; display:block; }
 		.adecoagro-converter .keys .key.k1,
 		.adecoagro-converter .keys .key.k2,
@@ -27,7 +32,7 @@
 		.adecoagro-converter .keys .key.k7,
 		.adecoagro-converter .keys .key.k8,
 		.adecoagro-converter .keys .key.k9,
-		.adecoagro-converter .keys .key.kdot { border-radius:50%; width:65px; height:65px; margin-right:15px; }
+		.adecoagro-converter .keys .key.kdot { /* border-radius:50%; */ width:65px; height:65px; margin-right:15px; }
 		.adecoagro-converter .keys .key.k1,
 		.adecoagro-converter .keys .key.k2,
 		.adecoagro-converter .keys .key.k4,
@@ -41,7 +46,7 @@
 		.adecoagro-converter .keys .key.k6,
 		.adecoagro-converter .keys .key.k9,
 		.adecoagro-converter .keys .key.k0 { margin-right:0; }
-		.adecoagro-converter .keys .key.k0 { width:145px; border-radius:35px; }
+		.adecoagro-converter .keys .key.k0 { width:145px; /* border-radius:35px; */ }
 		
 		a { color:#fff; text-decoration:none; transition:0.2s all; }
 		a:hover { background-color:rgba(255,255,255,0.2); }
@@ -59,11 +64,37 @@
 	<div class="adecoagro-converter">
 		<img src="img/converter-logo.png" />
 		<p class="sub-title">Converter Tool</p>
-		<div class="display">
-			<div class="total">Total <span class="unit">u.</span></div>
-			<div class="unit-from">Unit from: <span class="unit">u.</span></div>
-			<div class="unit-to">Unit to: <span class="unit">u.</span></div>
-		</div>
+		<form class="display">
+			<div><input class="total" name="total" placeholder="Result"></div>
+			<div><input class="convert" name="convert" placeholder="Units to convert"></div>
+			<div>
+				<select>
+					<option>Area</option>
+					<option>Quantity</option>
+					<option>Quantitative Area</option>
+					<option>Quantitative Value</option>
+				</select>
+			</div>
+			<div>
+				<select>
+					<option>From: </option>
+					<option>Unit 01 sample 01</option>
+					<option>Unit 01 sample 02</option>
+					<option>Unit 01 sample 03</option>
+					<option>Unit 01 sample 04</option>
+				</select>
+			</div>
+			<div>
+				<select>
+					<option>To: </option>
+					<option>Unit 02 sample 01</option>
+					<option>Unit 02 sample 02</option>
+					<option>Unit 02 sample 03</option>
+					<option>Unit 02 sample 04</option>
+				</select>
+			</div>
+		</form>
+		<!--
 		<div class="keys">
 			<div class="numbers">
 				<a href="javascript:;" class="key k7"><span>7</span></a><a href="javascript:;" class="key k8"><span>8</span></a><a href="javascript:;" class="key k9"><span>9</span></a><a href="javascript:;" class="key k4"><span>4</span></a><a href="javascript:;" class="key k5"><span>5</span></a><a href="javascript:;" class="key k6"><span>6</span></a><a href="javascript:;" class="key k1"><span>1</span></a><a href="javascript:;" class="key k2"><span>2</span></a><a href="javascript:;" class="key k3"><span>3</span></a><a href="javascript:;" class="key kdot"><span>.</span></a><a href="javascript:;" class="key k0"><span>0</span></a>
@@ -71,6 +102,7 @@
 				<a href="javascript:;" class="key keq"><span>=</span></a>
 			</div>
 		</div>
+		-->
 	</div>
 	
 </body>
