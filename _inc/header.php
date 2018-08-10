@@ -24,8 +24,8 @@
 						<li class="nav-item">
 							<a href="javascript:;" class="nav-link" id="sub-blank">Our Assets</a>
 						</li>
-						<li class="nav-item">
-							<a href="http://www.adecoagro.com/" target="_blank" class="nav-link" alt="Adecoagro Global Site">&nbsp;</a>
+						<li class="nav-item" style="background-position:20px;">
+							<a href="http://www.adecoagro.com/" target="_blank" class="nav-link" alt="Adecoagro Global Site" style="padding-left:60px;">Global</a>
 						</li>
 					</ul>
 					<ul class="navbar-nav mobile-only white">
