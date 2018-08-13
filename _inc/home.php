@@ -3,7 +3,7 @@
 ?>
 <div id="home">
 	<section id="hero">
-		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
+		<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 				<?php
 					$consulta_header = <<<SQL
@@ -24,6 +24,34 @@ SQL;
 						<a class="link caps" href="uploads/<?php echo $content_header['FILE_ONE'] ?>"><?php echo $content_header['TITLE_FILE_ONE'] ?></a>
 						<a class="link caps" href="uploads/<?php echo $content_header['FILE_TWO'] ?>"><?php echo $content_header['TITLE_FILE_TWO'] ?></a>
 						<img class="desktop-only" src="img/icon-nyse_listed-trans.png" />
+					</div>
+				</div>
+				<div class="carousel-item white" style="background: url('uploads/home-hero-sugarcane.jpg')">
+					<div class="container">
+						<h2 class="h1 bd-font">Sugarcane</h2>
+						<p class="txt-bold">Fully integrated operation and state of the art industrial facilities</p>
+						<p>We successfully developed a fully integrate and highly efficient operation in Mato Grosso do Sul</p>
+					</div>
+				</div>
+				<div class="carousel-item white" style="background: url('uploads/home-hero-dairy.jpg')">
+					<div class="container">
+						<h2 class="h1 bd-font">Dairy</h2>
+						<p class="txt-bold">Sustainable and fully scalable production model</p>
+						<p>Among the most productive milk producers in the region</p>
+					</div>
+				</div>
+				<div class="carousel-item white" style="background: url('uploads/home-hero-rice.jpg')">
+					<div class="container">
+						<h2 class="h1 bd-font">Rice</h2>
+						<p class="txt-bold">Among the largest producers in the region</p>
+						<p>With more than 40.000 hectares we have developed a fully integrated business implementing cutting edge technology</p>
+					</div>
+				</div>
+				<div class="carousel-item white" style="background: url('uploads/home-hero-crops.jpg')">
+					<div class="container">
+						<h2 class="h1 bd-font">Crops</h2>
+						<p class="txt-bold">Diversified operations throughout Argentina and Uruguay</p>
+						<p>Low cost producer with a diversified asset base</p>
 					</div>
 				</div>
 			</div>

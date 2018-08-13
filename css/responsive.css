@@ -19,6 +19,7 @@
 	header .sub > li > a { padding:10px; }
 	body > #home > #hero .carousel-item { padding:100px 0 70px; }
 	body > #home > #hero .carousel-item.report { padding-bottom:90px; }
+	body > #home > #hero .carousel-item p { font-size:20px; }
 }
 
 @media (max-width:991px) {
@@ -31,6 +32,7 @@
 	.h6 { font-size:90%; }
 	header .menu > li > a { padding:10px; }
 	body > #home #invest-reports #quarter-pack { margin-bottom:50px; }
+	body > #home > #hero .carousel-item p { font-size:18px; }
 }
 
 @media (max-width:991px) and (min-width:768px) {
