@@ -54,6 +54,12 @@
 					include('_inc/event.php');
 				} else if($_GET['s'] == 'contact'){
 					include('_inc/contact.php');
+				} else if($_GET['s'] == 'privacy-policy'){
+					include('_inc/privacy-policy.php');
+				} else if($_GET['s'] == 'term-of-use'){
+					include('_inc/term-of-use.php');
+				} else if($_GET['s'] == 'our-assets'){
+					include('_inc/our-assets.php');
 				}
 
 			include('_inc/footer.php');

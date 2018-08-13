@@ -23,8 +23,8 @@
 					<div class="col-md-6 col-lg-3 txt">
 						<p class="h3 hlight bd-font">Legal + Privacy</p>
 						<ul>
-							<li><a href="javascript:;">Privacy Policy</a></li>
-							<li><a href="javascript:;">Terms of Use</a></li>
+							<li><a href="index.php?s=privacy-policy">Privacy Policy</a></li>
+							<li><a href="index.php?s=term-of-use">Terms of Use</a></li>
 							<li><a href="javascript:;">Intellectual property rights</a></li>
 						</ul>
 					</div>

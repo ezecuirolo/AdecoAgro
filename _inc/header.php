@@ -22,7 +22,7 @@
 							<a href="index.php?s=financials" class="nav-link">Financials</a>
 						</li>
 						<li class="nav-item">
-							<a href="javascript:;" class="nav-link" id="sub-blank">Our Assets</a>
+							<a href="index.php?s=our-assets" class="nav-link" id="sub-blank">Our Assets</a>
 						</li>
 						<li class="nav-item">
 							<a href="http://www.adecoagro.com/" target="_blank" class="nav-link" alt="Adecoagro Global Site">&nbsp;</a>
