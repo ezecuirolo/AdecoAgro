@@ -26,5 +26,9 @@
 		$('#btn_uru').click(function(){
 			$('#div_mapa').html('<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1_Uh8GDcQ-rS9RhtGo1Va0qOuT1x3VVoY" style="width: 100%; height: 60vh;"></iframe>');
 		});
+
+		$('#btn_bra').click(function(){
+			$('#div_mapa').html('<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1bX5odap49js2Ub1H-l_asSRWbKK3MhRG" style="width: 100%; height: 60vh;"></iframe>');
+		});
 	});
 </script>

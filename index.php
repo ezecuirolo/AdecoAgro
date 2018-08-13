@@ -15,11 +15,12 @@
 
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/scripts.js"></script>
 	</head>
 	<body>
 		<?php
 			include('_inc/header.php');
-
+		
 				if(!isset($_GET['s'])){
 					include('_inc/home.php');
 				} else if($_GET['s'] == 'news'){
@@ -64,7 +65,5 @@
 
 			include('_inc/footer.php');
 		?>
-
-		<script src="js/scripts.js"></script>
 	</body>
 </html>

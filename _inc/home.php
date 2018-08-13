@@ -1,6 +1,31 @@
 <?php
 	include('setup/config.php');
 ?>
+
+<div class="modal">
+	<div class="modal-window">
+		<a href="javascript:;" class="modal-close"><img src="img/close.png" width="30" height="30"></a>
+		<div class="head">
+			<img src="img/logo.svg">
+			<h3 class="alt-green1 caps txt-bold">2Q18 Earnings Release</h3>
+			<p class="grey3">Thursday August 9, 2018 - after trading hours</p>
+
+			<h3 class="alt-green1 caps txt-bold">Conference Calls</h3>
+			<p>(Conference call replays will be available for one week)</p>
+		</div>
+
+		<div class="body">
+			<div class="call-info">
+				<p>August 9, 2018 - Thursday<br>
+				10:00 AM US ET (11 AM Argentina)</p>
+				<p>Connecting Number: +1 (646) 828 8246 / +1 (646) 828 8246</p>
+				<p>Code: <strong>Cosan</strong><br>
+				Replay: +55 (11) 3193 1012</p>
+			</div>
+		</div>
+	</div>
+</div>
+
 <div id="home">
 	<section id="hero">
 		<div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
