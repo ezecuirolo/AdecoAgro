@@ -3,6 +3,15 @@ $(document).ready(function () {
 		$('header').toggleClass('white');
 	} */
 
+	
+	// Modal
+	$('.modal').fadeIn(1000);
+	$('.modal .modal-close').click( function(){
+		console.log('modal close click');
+		$('.modal').fadeOut();
+	});
+	
+	
 	// Hamburguer & Linking behavior
 	$('.hamburger').click(function () {
 		$('.menu.mobile-only').slideToggle();

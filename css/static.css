@@ -184,6 +184,18 @@ body > #event .content a.download > i { margin-right:10px; font-size:20px; }
 .page .content .h4 { margin-top:30px; margin-bottom:20px; }
 
 
+/* Modal block */
+.modal { background:rgba(0,0,0,0.7); position:fixed; top:0; right:0; bottom:0; left:0; z-index:3000; display:none; }
+.modal .modal-close { position:absolute; top:30px; right:30px; transition:0.2s all; }
+.modal .modal-close:hover { opacity:0.8; }
+.modal * { text-align:center; }
+.modal .modal-window { background:#fff; padding:30px; overflow-y:scroll; position:relative; top:50%; left:50%; margin-top:-300px; width:550px; margin-left:-275px; }
+.modal .modal-window .head { margin-bottom:20px; }
+.modal .modal-window .head img { width:250px; display:block; float:none; margin-right:auto; margin-left:auto; }
+.modal .modal-window .body { margin:20px 0; }
+.modal .modal-window .body .call-info { border:1px solid #666; padding:30px; max-width:400px; margin-left:auto; margin-right:auto; }
+
+
 /* Footer */
 footer .newsletter { background-image:url(../img/bg-newsletter.jpg); background-repeat:no-repeat; background-position:center; background-size:cover; padding:50px 0; }
 footer .newsletter p { font-size:19px; font-weight:200; width:450px; max-width:100%; margin-left:auto; margin-right:auto; }
